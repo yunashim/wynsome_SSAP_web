@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<<<<<<< HEAD
     <title>CSS animation 과제</title>
     <style>
         .Pbox {
@@ -43,6 +44,40 @@
     <div class="Pbox">
         <div class="Gbox">
         </div>
+=======
+    <title>Document</title>
+
+    <style>
+        .sliderbox {
+            background-color: blanchedalmond;
+            width: 400px;
+            height: 50px;
+        }
+        .slider {
+            background-color: green;
+            width: 0%;
+            height: 100%;
+            animation-name: sliding;
+            animation-duration: 5s;
+            animation-iteration-count: 1;
+        }
+
+        @keyframes sliding {
+            0% {
+                width: 0%;
+            }
+            100% {
+                width: 100%;
+                background-color: greenyellow;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="sliderbox">
+        <div class="slider"></div>
+>>>>>>> 243175fe43722e8a12eb412ca573a9b5d291a681
     </div>
 </body>
 </html>
