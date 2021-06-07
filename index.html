@@ -8,47 +8,37 @@
     <title>Document</title>
 
     <style>
-        .container {
-            position: relative;
-            width: 700px;
-            height: 80px;
-            background-color: pink;
+        .sliderbox {
+            background-color: blanchedalmond;
+            width: 400px;
+            height: 50px;
         }
 
-        .box {
-            width: 700px;
-            height: 80px;
+        .slider {
             background-color: green;
-            animation-name: slidein;
-            animation-duration: 3s;
-            animation-direction: normal;
-            animation-iteration-count: infinite;
-
+            width: 0%;
+            height: 100%;
+            animation-name: sliding;
+            animation-duration: 5s;
+            animation-iteration-count: 1;
         }
 
-        @keyframes slidein {
+        @keyframes sliding {
             0% {
                 width: 0%;
-                opacity: 0;
-            }
-
-            50% {
-                width: 50%;
-                opacity: 1;
             }
 
             100% {
                 width: 100%;
-                opacity: 1;
+                background-color: greenyellow;
             }
         }
     </style>
 </head>
 
 <body>
-    <div class="container">
-        <div class="box">
-        </div>
+    <div class="sliderbox">
+        <div class="slider"></div>
     </div>
 </body>
 
