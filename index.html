@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .sliderbox {
+            background-color: blanchedalmond;
+            width: 400px;
+            height: 50px;
+        }
+        .slider {
+            background-color: green;
+            width: 0%;
+            height: 100%;
+            animation-name: sliding;
+            animation-duration: 5s;
+            animation-iteration-count: 1;
+        }
+
+        @keyframes sliding {
+            0% {
+                width: 0%;
+            }
+            100% {
+                width: 100%;
+                background-color: greenyellow;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="sliderbox">
+        <div class="slider"></div>
+    </div>
+</body>
+</html>
