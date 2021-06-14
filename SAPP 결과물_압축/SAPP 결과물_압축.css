@@ -3,11 +3,43 @@ body {
     margin: 0;
 }
 
+header {
+    display: flex;
+    flex-direction: row;
+    border-style: solid;
+    border-color: #326148;
+    background-color: #326148;
+    border-width: 1px;
+    align-items: center;
+}
+
+    .teamlogo {
+        color: white;
+        font-size: 27pt;
+        border-style: solid;
+        border-color: black;
+        border-width: 13px;
+        background-color: black;
+        width: 150px;
+        margin-left: 20px;
+        text-align: center;
+    }
+
+    .headermenu {
+        color: #F6F3EC;
+        font-size: 21pt;
+        display: flex;
+        flex-direction: row;
+        width: 800px;
+        justify-content: space-around;
+        margin-left: 210px;
+    }
+
 #contents_box {
     position: absolute;
     background-color: #e0e0e0;
-    width: 970px;
-    height: 2000px;
+    width: 960px;
+    height: 3000px;
     margin: 0 auto;
     left: 0;
     right: 0
@@ -17,21 +49,19 @@ body {
         background-color: gray;
         width: 900px;
         height: 500px;
-        margin: 25px auto 100px auto;
+        margin: 100px auto 175px auto;
     }
 
     #container1 {
         display: flex;
         flex-direction: row;
         width: 900px;
-        height: 600px;
+        height: 526px;
         margin: 0 auto;
-        margin-top: 25px;
-
     }
 
         #image {
-            background-color: black;
+            background-color: gray;
             height: 526px;
             width: 260px;
         }
@@ -83,18 +113,19 @@ body {
                     }
 
     #container2 {
-        background-color: black;
+        background-color: gray;
         width: 900px;
         height: 600px;
         margin: 0 auto;
-        margin-top: 25px;
+        margin-top: 175px;
     }
 
         #Text_Box {
-            background-color: white;
+            position: relative;
+            top: 40px;
             width: 450px;
             height: 200px;
-            margin-right: 0;
+            margin-right: 40px;
             margin-left: auto;
         }
 
