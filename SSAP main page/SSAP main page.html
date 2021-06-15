@@ -13,23 +13,91 @@
             margin: 0%;
         }
 
+        @font-face {
+            font-family: 'Gothic';
+            src: url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@700&display=swap');
+        }
+
+        @font-face {
+            font-family: 'Oleo';
+            src: url('https://fonts.googleapis.com/css2?family=Oleo+Script&display=swap');
+        }
+
         .container1 {
-            background-color: grey;
-            position: absolute;
-            width: 960px;
-            height: 760px;
+            position: relative;
+            background-color: #ebe8e37e;
+            width: 100%;
+            max-width: 960px;
+            height: 100vh;
             margin: 0 auto;
             left: 0;
             right: 0
+        }
+
+        .textbox1 {
+            position: absolute;
+            justify-content: space-evenly;
+            left: 30px;
+            bottom: 50px;
+            width: 250px;
+            height: 150px;
+            padding-left: 5%;
+            color: black;
+
+        }
+
+        .firsttextline {
+            font-family: 'Gothic';
+            font-size: 23pt;
+            font-weight: 550;
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+
+        .secondtextline {
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+        }
+
+        .ssaphover {
+            font-family: 'Oleo';
+            font-size: 35pt;
+            font-weight: 700;
+            padding-bottom: 5px;
+            font-style: italic;
+            color: #326148;
+            text-shadow: 2px 2px 1px black;
+        }
+
+        .ssaphover:hover {
+            color: #BEBC70;
+            text-shadow: 2px 2px 1px white;
+            transform: scale(1.1);
+            cursor: pointer;
+        }
+
+        .seconetextlineinline {
+            font-family: 'Gothic';
+            font-size: 30pt;
+            font-weight: 550;
+            padding-top: 8px;
+            padding-bottom: 5px;
+            padding-left: 23px;
         }
     </style>
 </head>
 
 <body>
+
     <div class="container1">
         <div class="textbox1">
-            <div class="firsttextline"></div>
-            <div class="secondtextline"></div>
+            <div class="firsttextline">재활용 가능?</div>
+            <div class="secondtextline">
+                <div class="ssaphover">SSAP</div>
+                <div class="seconetextlineinline">가능! </div>
+            </div>
         </div>
     </div>
 </body>
