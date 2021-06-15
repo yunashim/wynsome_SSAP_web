@@ -1,0 +1,94 @@
+body {
+    margin: 0;
+    background-color: #89A78F;
+}
+
+.header {
+    z-index: 99;
+    width: 100%;
+    height: 73px;
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    background-color: #326148;
+    align-items: center;
+    font-family: 'Gothic A1', sans-serif;
+}
+
+    .teamlogo {
+        width: 273px;
+        height: 73px;
+        color: white;
+        font-size: 20pt;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        background-color: black;
+        margin-left: 30px;
+    }
+
+    .headermenu {
+        color: #F6F3EC;
+        font-size: 17pt;
+        display: flex;
+        flex-direction: row;
+        margin-left: 100px;
+        width: 800px;
+        justify-content: space-around;
+    }
+
+    .firstmenu, .secondmenu, .thirdmenu {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .secondmenuline {
+        border-style: solid;
+        border-width: 1px;
+        border-color: white;
+        z-index: 99;
+    }
+
+    .firstmenutext:hover > .firstmenuline {
+        border-style: solid;
+        border-width: 1px;
+        border-color: white;
+        z-index: 99;
+    }
+
+    .thirdmenutext:hover > .thirdmenuline {
+        border-style: solid;
+        border-width: 1px;
+        border-color: white;
+        z-index: 99;
+    }
+
+#contents_box {
+    width: 100%;
+    max-width: 960px;
+    height: 100vh;
+    background-color: #7B937F;
+    margin: auto;
+}
+
+    #container1 {
+        width: 100%;
+        max-width: 800px;
+        height: 60vh;
+        margin: auto;
+        padding: 25vh 0;
+    }
+
+    #Top {
+        background-color: black;
+        width: 100%;
+        height: 50%;
+    }
+
+    #Bottom {
+        background-color: white;
+        width: 100%;
+        height: 50%;
+    }
+    
