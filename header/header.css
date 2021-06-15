@@ -1,5 +1,7 @@
 body {
     margin: 0;
+    width: 1440pt;
+    height: 75pt;
 }
 .header {
     display: flex;
@@ -26,7 +28,7 @@ body {
     font-size: 21pt;
     display: flex;
     flex-direction: row;
-    width: 800px;
+    width: 1300px;
     justify-content: space-around;
     margin-left: 210px;
 }
