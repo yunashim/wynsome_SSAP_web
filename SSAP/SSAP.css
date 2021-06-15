@@ -1,0 +1,101 @@
+body {
+    margin: 0;
+    background-color: beige;
+}
+.header {
+    z-index: 99;
+    width: 100%;
+    height: 73px;
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    background-color: #326148;
+    align-items: center;
+    font-family: 'Gothic A1', sans-serif;
+}
+.teamlogo {
+    width: 273px;
+    height: 73px;
+    color: white;
+    font-size: 20pt;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: black;
+    margin-left: 30px;
+}
+.headermenu {
+    color: #F6F3EC;
+    font-size: 17pt;
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    width: 800px;
+    justify-content: space-around;
+}
+.firstmenu, .secondmenu, .thirdmenu {
+    display: flex;
+    flex-direction: column;
+}
+.firstmenuline {
+    border-style: solid;
+    border-width: 1px;
+    border-color: white;
+    z-index: 99;
+}
+.secondmenutext:hover > .secondmenuline {
+    border-style: solid;
+    border-width: 1px;
+    border-color: white;
+    z-index: 99;
+}
+.thirdmenutext:hover > .thirdmenuline {
+    border-style: solid;
+    border-width: 1px;
+    border-color: white;
+    z-index: 99;
+}
+.smallbackground {
+    z-index: -2;
+    border-style: solid;
+    border-color: #EBE8E3;
+    background-color: #EBE8E3;
+    width: 1200px;
+    height: 646pt;
+    margin: 0 auto;
+}
+.text {
+    z-index: -1;
+    margin-top: 150px;
+    margin-left: 70px;
+}
+.bigtext {
+    font-size: 25pt;
+    font-weight: bold;
+    color: black;
+    margin-top: 60px;
+    margin-bottom: 10px;
+}
+.smalltext {
+    font-size: 14pt;
+    color: gray;
+}
+.motionbox {
+    z-index: 0;
+    position: absolute;
+    margin-top: 440px;
+    width: 1000px;
+    height: 300px;
+    background-color: black;
+    opacity: 50%;
+}
+.SSAP {
+    z-index: 0;
+    position: absolute;
+    margin-top: 500px;
+    margin-left: 1000px;
+    width: 440px;
+    height: 250px;
+    background-color: #326148;
+}
