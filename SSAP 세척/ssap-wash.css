@@ -1,0 +1,161 @@
+.header {
+    width: 100%;
+    height: 73px;
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: #326148;
+    align-items: center;
+    margin: 0;
+    z-index: 9;
+}
+    .teamlogo {
+        width: 273px;
+        height: 73px;
+        color: white;
+        font-size: 20pt;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        background-color: black;
+        margin-left: 30px;
+    }
+    .headermenu {
+        color: #F6F3EC;
+        font-size: 17pt;
+        display: flex;
+        flex-direction: row;
+        margin: 0 auto;
+        width: 800px;
+        justify-content: space-around;
+    }
+
+
+body {
+    background-color: #F6F3ED;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+    .safeZone {
+        background-color: #F6F3ED;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+    }
+
+        .mid {
+            width: 100%;
+            max-width: 960px;
+            background-color: #EBE8E3;
+            height: 703px;
+        }
+
+    .safeZoneGreen {
+        background-color: #89A78F;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+    }
+
+        .midGreen {
+            width: 100%;
+            max-width: 960px;
+            background-color: #7B937F;
+            height: 703px;
+        }
+
+            .realSpaceTaken {
+                width: 100%;
+                height: 630px;
+                margin-top: 73px;
+                display: flex;
+                flex-flow: row nowrap;
+            }
+
+    
+
+
+/* page 1 */
+
+#animationWater {
+    background-color: antiquewhite;
+    height: 100%;
+    width: 540px;
+}
+
+#waterSideTextBox1 {
+    height: 100%;
+    width: 420px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+    #waterSideText1 {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+        #waterSSAP {
+            font-size: 60px;
+        }
+
+        #waterRolling {
+            background-color: black;
+            width: 200px;
+            height: 70px;
+            font-size: 20px;
+        }
+
+        #washerText {
+            font-size: 55px;
+            margin-top: 15px;
+        }
+
+
+
+/* page 2 */
+
+#waterPicture {
+    background-color: antiquewhite;
+    height: 100%;
+    width: 480px;
+}
+
+#waterSideTextBox2 {
+    z-index: 1;
+    width: 1300px;
+    height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+    .sideText2 {
+        display: flex;
+        flex-flow: column;
+        justify-content: right;
+        margin-top: 130px;
+        margin-right: 100px;
+    }
+
+        .greenTitle {
+            text-align: right;
+            font-size: 30px;
+            font-weight: bold;
+            color: #90A791;
+        }
+
+        .subText2 {
+            text-align: right;
+            font-size: 18px;
+        }
