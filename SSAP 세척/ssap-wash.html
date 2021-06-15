@@ -5,56 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
-    <style>
-        body {
-            background-color: #F6F3ED;
-            margin: 0;
-            display: flex;
-            justify-content: center;
-            flex-direction: column;
-        }
-
-        .safeZone {
-            background-color: #F6F3ED;
-            display: flex;
-            justify-content: center;
-            width: 100%;
-            height: 100%;
-        }
-
-        .mid {
-            width: 100%;
-            max-width: 960px;
-            background-color: #EBE8E3;
-            height: 701px;
-        }
-
-        .midGreen {
-            width: 100%;
-            max-width: 960px;
-            background-color: #7B937F;
-            height: 701px;
-        }
-
-        .safeZoneGreen {
-            background-color: #89A78F;
-            display: flex;
-            justify-content: center;
-            width: 100%;
-            height: 100%;
-        }
-    </style>
+    <link rel="stylesheet" href="./ssap-wash.css">
 </head>
+
 <body>
+    <div class="header">
+        <div class="teamlogo">
+                팀 로고
+        </div>
+        <div class="headermenu">
+            <div class="firstmenu">SSAP</div> 
+            <div class="secondmenu">SSAP 결과물</div>
+            <div class="thirdmenu">팀소개</div>
+        </div>
+    </div>
+
     <div class="safeZone">
         <div class="mid">
-            <div id="animationWater"></div>
-            <div id="waterSideTextBox1">
-                <div id="waterSideText1">
-                    <div id="waterSSAP"></div>
-                    <div id="waterRolling"></div>
-                    <div id="washerText"></div>
+            <div class="realSpaceTaken">
+                <div id="animationWater"></div>
+                <div id="waterSideTextBox1">
+                    <div id="waterSideText1">
+                        <div id="waterSSAP">SSAP</div>
+                        <div id="waterRolling"></div>
+                        <div id="washerText">세척기</div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -63,16 +38,22 @@
 
     <div class="safeZone">
         <div class="mid">
-            <div id="waterPicture"></div>
-            <div id="waterSideTextBox2">
-                <div id="waterSideText2">
+            <div class="realSpaceTaken">
+                <div id="waterPicture"></div>
+                <div id="waterSideTextBox2">
                     <div class="sideText2">
-                        <div class="greenTitle"></div>
-                        <div class="subText2"></div>
+                        <div class="greenTitle">물 조절 매커니즘</div>
+                        <div class="subText2">
+                            줄을 잡아당기면 물이 분사되는 구멍을 막고 있는 판이 들어올려진다. 
+                            <br>사용자가 원하는 양만큼 물을 분사한 후에, 줄을 놓으면 다시 판이 내려가 
+                            <br>물이 못 나오게 조절한다.</div>
                     </div>
                     <div class="sideText2">
-                        <div class="greenTitle"></div>
-                        <div class="subText2"></div>
+                        <div class="greenTitle">세척 메커니즘</div>
+                        <div class="subText2">
+                            재활용품이 올려진 상자와 압축기 옆부분에 위치하고 있는 손잡이가 연결되어 있어 
+                            <br>손잡이를 돌리면 상자 또한 돌아가며 재활용품을 세척하게 되고 
+                            <br>손잡이를 통해 분사되었던 물은 압축기 하단으로 빠지게 된다.</div>
                     </div>
                 </div>
             </div>
@@ -82,22 +63,24 @@
 
     <div class="safeZoneGreen">
         <div class="midGreen">
-            <div id="waterPicture"></div>
-            <div id="waterSideTextBox2">
-                <div id="waterSideText2">
-                    <div class="sideText2">
-                        <div class="greenTitle"></div>
-                        <div class="subText2"></div>
-                    </div>
-                    <div class="sideText2">
-                        <div class="greenTitle"></div>
-                        <div class="subText2"></div>
+            <div class="realSpaceTakenGreen">
+                <div id="timeLine"></div>
+                <div id="waterSide">
+                    <div id="waterSideText">
+                        <div class="sideText">
+                            <div class="greenTitle"></div>
+                            <div class="subText"></div>
+                        </div>
+                        <div class="sideText">
+                            <div class="greenTitle"></div>
+                            <div class="subText"></div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    
+
 </body>
 </html>
