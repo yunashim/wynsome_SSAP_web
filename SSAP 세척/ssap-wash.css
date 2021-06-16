@@ -1,4 +1,6 @@
+
 .header {
+    z-index: 99;
     width: 100%;
     height: 73px;
     display: flex;
@@ -8,31 +10,54 @@
     top: 0;
     background-color: #326148;
     align-items: center;
-    margin: 0;
-    z-index: 9;
+    font-family: 'Gothic A1', sans-serif;
 }
-    .teamlogo {
-        width: 273px;
-        height: 73px;
-        color: white;
-        font-size: 20pt;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        text-align: center;
-        background-color: black;
-        margin-left: 30px;
-    }
-    .headermenu {
-        color: #F6F3EC;
-        font-size: 17pt;
-        display: flex;
-        flex-direction: row;
-        margin: 0 auto;
-        width: 800px;
-        justify-content: space-around;
-    }
+.teamlogo {
+    width: 273px;
+    height: 73px;
+    color: white;
+    font-size: 20pt;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: black;
+    margin-left: 30px;
+}
+.headermenu {
+    color: #F6F3EC;
+    font-size: 17pt;
+    display: flex;
+    flex-direction: row;
+    margin-left: 100px;
+    width: 800px;
+    justify-content: space-around;
+}
+.firstmenu, .secondmenu, .thirdmenu {
+    display: flex;
+    flex-direction: column;
+}
+.firstmenuline {
+    border-style: solid;
+    border-width: 1px;
+    border-color: white;
+    z-index: 99;
+}
+.secondmenutext:hover > .secondmenuline {
+    border-style: solid;
+    border-width: 1px;
+    border-color: white;
+    z-index: 99;
+}
+.thirdmenutext:hover > .thirdmenuline {
+    border-style: solid;
+    border-width: 1px;
+    border-color: white;
+    z-index: 99;
+}
 
+
+/* ---------------------- */
 
 body {
     background-color: #F6F3ED;
@@ -41,6 +66,18 @@ body {
     justify-content: center;
     flex-direction: column;
 }
+
+.container {
+    display: flex;
+    scroll-behavior: smooth;
+    flex-flow: column nowrap;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+}
+
+    .child {
+        scroll-snap-align: start;
+    }
 
     .safeZone {
         background-color: #F6F3ED;
@@ -79,7 +116,6 @@ body {
                 display: flex;
                 flex-flow: row nowrap;
             }
-
     
 
 
@@ -159,3 +195,22 @@ body {
             text-align: right;
             font-size: 18px;
         }
+
+
+/* page 3 */
+
+#timeLine {
+    width: 960px;
+    height: 630px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+    .timeBox {
+        background-color: black;
+        width: 150px;
+        height: 170px;
+        margin:30px;
+    }
