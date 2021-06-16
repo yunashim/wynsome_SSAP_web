@@ -1,7 +1,6 @@
 body {
     margin: 0;
 }
-/* 헤더 */
 .header {
     z-index: 99;
     width: 100%;
@@ -13,7 +12,6 @@ body {
     align-items: center;
     font-family: 'Gothic A1', sans-serif;
 }
-/* 팀 로고 */
 .teamlogo {
     width: 273px;
     height: 73px;
@@ -26,56 +24,67 @@ body {
     background-color: black;
     margin-left: 30px;
 }
-/* 메뉴 각각*/
-.headermenu ul li {
-    list-style-type: none;
-}
-/* 메뉴 이름 */
-.headermenu a {
-    text-decoration: none;
-    color: white;
-    position: relative;
-}
-/* 서브 메뉴 */
-.headermenu ul ul {
-    display: none;
-    position: absolute;
-    color: white;
-    background-color: #326148;
-}
-/* 서브 메뉴 호버 */
-.headermenu > ul > li:hover ul {
-    display: contents;
-}
-/* 메뉴 전체*/
-.headermenu ul {
+.headermenu {
     display: flex;
     flex-direction: row;
-    margin-left: 120px;
+    margin-left: 163px;
     width: 800px;
     justify-content: space-around;
 }
-/* 메뉴 라인 */
+a {
+    text-decoration: none;
+    list-style-type: none;
+    color: white;
+    font-size: 18px;
+}
+.firstmenu, .secondmenu, .thirdmenu {
+    display: flex;
+    flex-direction: column;
+}
 .firstmenuline, .secondmenuline, .thirdmenuline {
     border-style: solid;
     border-width: 1px;
     border-color: #326148;
+    z-index: 99;
 }
-/* 첫번째 메뉴 텍스트 호버시 첫번째 메뉴 라인 반응 */
 .firstmenutext:hover > .firstmenuline {
     border-style: solid;
     border-width: 1px;
     border-color: white;
+    z-index: 99;
 }
-/* 두번째 메뉴 텍스트 호버시 두번째 메뉴 라인 반응 */
 .secondmenutext:hover > .secondmenuline {
     border-style: solid;
     border-width: 1px;
     border-color: white;
+    z-index: 99;
 }
-/* 세번째 메뉴 텍스트 호버시 세번째 메뉴 라인 반응 */
 .thirdmenutext:hover > .thirdmenuline {
     border-style: solid;
     border-width: 1px;
     border-color: white;
+    z-index: 99;
+}
+.servemenu {
+    width: 120px;
+    height: 80px;
+    position: absolute;
+    margin-top: 70px;
+    margin-left: 803px;
+    color: white;
+    background-color: #326148;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Gothic A1', sans-serif;
+    font-size: 18px;
+    display: none;
+}
+.firstservemenu {
+    margin-bottom: 10px;
+}
+.secondmenu:hover + .servemenu {
+    display: block;
 }
