@@ -102,6 +102,7 @@ body {
         max-width: 900px;
         height: 600px;
         margin: 0 auto;
+        justify-content: center;
     }
 
         #image {
@@ -111,13 +112,44 @@ body {
             margin: 0 auto;
         }
 
+        #Before {
+            height: 526px;
+            width: 70%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+            #SSAP_Text {
+                font-size: 35pt;
+                font-weight: bolder;
+                padding-bottom: 5px;
+                font-style: italic;
+                color: #326148;
+                text-shadow: 2px 2px 1px black;
+            }
+
+            #Changing_Text {
+                background-color: black;
+                height: 65px;
+                width: 30%;
+            }
+
+            #Compressor {
+                margin: 10px auto;
+                font-size: 40px;
+                font-weight: bolder;
+            }
+
         #info_Box {
             display: flex;
             flex-direction: column;
             width: 600px;
             height: 526px;
             margin: 0 auto;
-        }
+            display: none;
+        }   
 
             .info {
                 display: flex;
@@ -215,8 +247,24 @@ body {
             }
 
 @media (max-width: 960px) {
-    #video {
-        width: 675px;
-        height: 375px;
+    #video_Box {
+        height: 550px;
     }
+    
+        #video {
+            width: 720px;
+            height: 400px;
+        }
+
+    #image {
+        display: none;
+    }
+
+        #Before {
+            display: none;
+        }
+
+        #info_Box {
+            display: block;
+        }
 }
