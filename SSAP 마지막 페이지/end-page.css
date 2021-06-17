@@ -68,7 +68,7 @@ body {
 
 .container {
     width: 100%;
-    height: 703px;
+    height: 100vh;
     display: flex;
     scroll-behavior: smooth;
     flex-flow: column nowrap;
@@ -81,7 +81,7 @@ body {
         display: flex;
         justify-content: center;
         width: 100%;
-        height: 703px;
+        height: 100vh;
 
         scroll-snap-align: start;
     }
@@ -94,19 +94,19 @@ body {
                 width: 100%;
                 max-width: 960px;
                 background-color: #EBE8E3;
-                height: 703px;
+                height: 100vh;
             }
 
             .midGreen {
                 width: 100%;
                 max-width: 960px;
                 background-color: #7B937F;
-                height: 703px;
+                height: 100vh;
             }
 
                 .realSpaceTaken {
                     width: 100%;
-                    height: 630px;
+                    height: calc(100vh - 73px);
                     margin-top: 73px;
                     display: flex;
                     flex-flow: row nowrap;
