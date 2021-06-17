@@ -17,7 +17,7 @@ body {
     width: 273px;
     height: 73px;
     color: white;
-    font-size: 20pt;
+    font-size: 18px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -27,7 +27,7 @@ body {
 }
 .headermenu {
     color: #F6F3EC;
-    font-size: 17pt;
+    font-size: 18px;
     display: flex;
     flex-direction: row;
     margin: 0 auto;
@@ -61,14 +61,16 @@ body {
     border-style: solid;
     border-color: #EBE8E3;
     background-color: #EBE8E3;
-    width: 1200px;
-    height: 646pt;
+    width: 100%;
+    max-width: 960px;
+    height: 2000px;
     margin: 0 auto;
 }
 .text {
     z-index: -1;
     margin-top: 150px;
-    margin-left: 70px;
+    margin-left: 50px;
+    font-family: 'Gothic A1', sans-serif;
 }
 .bigtext {
     font-size: 25pt;
@@ -84,7 +86,7 @@ body {
 .motionbox {
     z-index: 0;
     position: absolute;
-    margin-top: 440px;
+    margin-top: 521px;
     width: 1000px;
     height: 300px;
     background-color: black;
@@ -93,9 +95,53 @@ body {
 .SSAP {
     z-index: 0;
     position: absolute;
-    margin-top: 500px;
+    margin-top: 600px;
     margin-left: 1000px;
     width: 440px;
     height: 250px;
     background-color: #326148;
+    opacity: 50%;
+}
+.motionbox1 {
+    z-index: 0;
+    position: absolute;
+    margin-top: 1070px;
+    width: 500px;
+    height: 500px;
+    background-color: black;
+    opacity: 50%;
+}
+.circle {
+    display: flex;
+    flex-direction: row;
+    margin-left: 360px;
+    margin-top: 710px;
+    margin-bottom: 30px;
+}
+.firstcircle {
+    width: 230px;
+    height: 230px;
+    border-style: solid;
+    border-radius: 50%;
+    border-color: black;
+}
+.secondcircle {
+    width: 230px;
+    height: 230px;
+    border-style: solid;
+    border-radius: 50%;
+    border-color: black;
+    margin-left: 77px;
+}
+.circleundertext {
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    font-family: 'Gothic A1', sans-serif;
+}
+.firstcircleundertext {
+    margin-left: 45px;
+}
+.secondcircleundertext {
+    margin-left: 125px;
 }

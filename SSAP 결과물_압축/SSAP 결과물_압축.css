@@ -25,7 +25,7 @@ body {
     width: 273px;
     height: 73px;
     color: white;
-    font-size: 20pt;
+    font-size: 18px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -36,7 +36,7 @@ body {
 
 .headermenu {
     color: #F6F3EC;
-    font-size: 17pt;
+    font-size: 18px;
     display: flex;
     flex-direction: row;
     margin-left: 100px;
@@ -72,7 +72,7 @@ body {
 
 #contents_box {
     background-color: #e0e0e0;
-    width: 100%;
+    width: 100vw;
     max-width: 960px;
     height: 2300px;
     margin: auto;
@@ -81,7 +81,7 @@ body {
     #video_Box {
         width: 100%;
         max-width: 900px;
-        height: 526px;
+        height: 600px;
         margin: 0 auto;
         align-items: center;
         padding-top: 73px;
@@ -92,7 +92,7 @@ body {
             width: 100%;
             height: 500px;
             margin: 0 auto;
-            margin-top: 63.5px;
+            margin-top: 100px;
         }
 
     #container1 {
@@ -100,8 +100,9 @@ body {
         flex-direction: row;
         width: 100%;
         max-width: 900px;
-        height: 526px;
+        height: 600px;
         margin: 0 auto;
+        justify-content: center;
     }
 
         #image {
@@ -111,13 +112,44 @@ body {
             margin: 0 auto;
         }
 
+        #Before {
+            height: 526px;
+            width: 70%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+            #SSAP_Text {
+                font-size: 35pt;
+                font-weight: bolder;
+                padding-bottom: 5px;
+                font-style: italic;
+                color: #326148;
+                text-shadow: 2px 2px 1px black;
+            }
+
+            #Changing_Text {
+                background-color: black;
+                height: 65px;
+                width: 30%;
+            }
+
+            #Compressor {
+                margin: 10px auto;
+                font-size: 40px;
+                font-weight: bolder;
+            }
+
         #info_Box {
             display: flex;
             flex-direction: column;
             width: 600px;
             height: 526px;
             margin: 0 auto;
-        }
+            display: none;
+        }   
 
             .info {
                 display: flex;
@@ -145,7 +177,7 @@ body {
                         height: 40px;
                         width: auto;
                         margin-top: 25px;
-                        font-size: 23px;
+                        font-size: 20px;
                         color: #81A78C;
                     }
 
@@ -153,7 +185,8 @@ body {
                         height: 40px;
                         width: auto;
                         margin-top: 20px;
-                        color: black;
+                        color: rgb(71, 71, 71);
+                        font-size: 15px;
                     }
 
     #container2 {
@@ -187,13 +220,13 @@ body {
                 text-align: right;
                 font-size: 16px;
                 margin: 20px 0;
-                color: rgb(78, 78, 78);
+                color: rgb(71, 71, 71);
             }
 
             .infoText2 {
                 text-align: right;
                 font-size: 16px;
-                color: rgb(78, 78, 78);
+                color: rgb(71, 71, 71);
             }
 
         #hrefText_Box {
@@ -212,3 +245,26 @@ body {
                 color: white;
                 text-align: right;
             }
+
+@media (max-width: 960px) {
+    #video_Box {
+        height: 550px;
+    }
+    
+        #video {
+            width: 720px;
+            height: 400px;
+        }
+
+    #image {
+        display: none;
+    }
+
+        #Before {
+            display: none;
+        }
+
+        #info_Box {
+            display: block;
+        }
+}
