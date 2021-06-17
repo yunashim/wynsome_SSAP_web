@@ -83,7 +83,7 @@ body {
 
         .Left_Box {
             width: 25%;
-            height: 100%;
+            height: 50vh;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -91,7 +91,7 @@ body {
 
         .Right_Box {
             width: 25%;
-            height: 100%;
+            height: 50vh;
             display: flex;
             flex-direction: column-reverse;
             align-items: center;
@@ -100,7 +100,8 @@ body {
             .Circle {
                 background-color: white;
                 width: 100%;
-                height: 100%;
+                height: 96%;
+                max-height: 193px;
                 border-radius: 50%;
                 border: solid black 1px;
                 text-align: center;
@@ -119,37 +120,47 @@ body {
             .TextBox {
                 width: 80%;
                 height: 100%;
+                max-height: 152.8px;
                 font-size: 15px;
                 display: flex;
                 flex-direction: column;
                 text-align: center;
                 justify-content: center;
                 color: #7B937F;
+                margin-top: 0;
+                margin-bottom: auto;
             }
+
+                .Right_Box > .TextBox {
+                    margin-top: auto;
+                    margin-bottom: 0;
+                }
 
 @media (max-width: 960px) {
     #container1 {
         flex-direction: column;
         height: 80vh;
         padding: 15vh 0 5vh 0;
+        align-items: center;
     }
         .Left_Box {
             flex-direction: row;
-            width: 100%;
+            width: 80%;
             height: 25%;
             justify-content: center;
         }
         .Right_Box {
             flex-direction: row;
-            width: 100%;
+            width: 80%;
             height: 25%;
             justify-content: center;
         }
 
             .Circle {
-                width: 25%;
+                width: 24%;
                 max-width: 160px;
                 margin: 0;
+                margin: 0.5% 0;
                 margin-right: 15px;
             }
 
@@ -165,4 +176,39 @@ body {
                     margin-right: 13px;
                 }
 }
-    
+
+@media (max-width: 760px) {
+    #contents_box {
+        height: 220vh;
+    }
+
+    #container1 {
+        height: 200vh;
+    }
+
+        .Left_Box, .Right_Box {
+            flex-direction: column;
+            margin-top: 10px;
+        }
+
+            .Circle {
+                height: 80%;
+                max-height: 162px;
+                width: 100%;
+                margin: 0;
+                margin-bottom: 15px;
+            }
+
+                .Circle:hover {
+                    margin-right: 0;
+                    margin-bottom: 13px;
+                }
+            
+            .TextBox {
+                margin: 0;
+            }
+
+            .Right_Box > .TextBox {
+                margin: 0;
+            }
+}

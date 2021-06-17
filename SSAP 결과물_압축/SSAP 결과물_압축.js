@@ -13,7 +13,6 @@ var texts = [
     }
 ]
 
-
 for (var i in texts) {
     var text = texts[i];
     document.getElementById("info_Box").innerHTML += `
@@ -32,3 +31,4 @@ for (var i in texts) {
     </div>
     `;
 }
+
