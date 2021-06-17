@@ -63,7 +63,7 @@ body {
     background-color: #EBE8E3;
     width: 100%;
     max-width: 960px;
-    height: 2000px;
+    height: 100vh;
     margin: 0 auto;
 }
 .text {
