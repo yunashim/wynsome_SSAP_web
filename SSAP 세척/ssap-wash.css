@@ -180,14 +180,14 @@ body {
 
             .mid {
                 width: 100%;
-                max-width: 960px;
+                max-width: 60rem;
                 background-color: #EBE8E3;
                 height: 100vh;
             }
 
             .midGreen {
                 width: 100%;
-                max-width: 960px;
+                max-width: 60rem;
                 background-color: #7B937F;
                 height: 100vh;
             }
@@ -273,7 +273,8 @@ body {
 
         .greenTitle {
             text-align: right;
-            font-size: 30px;
+            /* font-size: 30px; */
+            font-size: 1.875rem;
             font-weight: bold;
             color: #90A791;
         }
@@ -281,14 +282,15 @@ body {
         .subText2 {
             text-align: right;
             /* font-size: 18px; */
-            font-size: 1.875rem;
+            font-size: 1.125rem;
         }
 
 
 /* page 3 */
 
 #timeLine {
-    width: 960px;
+    /* width: 960px; */
+    width: 60rem;
     height: calc(100vh - 73px);
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(25%, 1fr));
@@ -307,9 +309,11 @@ body {
 
         .timeBox {
             background-color: black;
-            width: 150px;
-            height: 170px;
-            margin-bottom: 0px;
+            /* width: 150px; */
+            width: 9.375rem;
+            /* height: 170px; */
+            height: 10.625rem;
+            margin-bottom: 0;
         }
 
         .timeBox:hover ~ .timeText {
@@ -321,11 +325,14 @@ body {
         }
 
         .timeText {
-            padding-top: 10px;
+            /* padding-top: 10px; */
+            padding-top: 0.625rem;
             margin: 0;
             display: none;
-            width: 150px;
-            height: 200px;
+            /* width: 150px; */
+            width: 9.375rem;
+            /* height: 200px; */
+            height: 12.5rem;
         }
 
 @media (max-width: 839px) {
