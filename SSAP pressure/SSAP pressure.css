@@ -262,7 +262,8 @@ a {
                 display: flex;
                 border: #81A78C solid 4px;
                 margin: 10px 0;
-                width: 600px;
+                width: 100%;
+                min-width: 600px;
                 height: 147px;
             }
             .info_hidden {
@@ -385,6 +386,10 @@ a {
 
         .info_Box_hidden {
             display: block;
+        }
+
+        .info_hidden {
+            display: flex;
         }
 
     #container2 {
