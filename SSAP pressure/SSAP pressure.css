@@ -148,10 +148,6 @@ a {
     overflow: auto;
 }
 
-img {
-    
-}
-
 .contents_box {
     background-color: #e0e0e0;
     width: 100vw;
@@ -194,7 +190,7 @@ img {
     }
 
         #image {
-            background-color: gray;
+            background-image: url(./제목_없는_아트워크1.png);
             height: 600px;
             width: 280px;
             margin: 0 auto;
@@ -208,7 +204,7 @@ img {
 
         .Before {
             height: 526px;
-            width: 70%;
+            width: 50%;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -227,7 +223,7 @@ img {
             #Changing_Text {
                 background-color: black;
                 height: 65px;
-                width: 30%;
+                width: 40%;
             }
 
             #Compressor {
@@ -240,7 +236,10 @@ img {
             width: 600px;
             height: 526px;
             margin: 0 auto;
-        }   
+        }
+        .info_Box_hidden {
+            display: none;
+        }
 
             .info {
                 display: flex;
@@ -346,10 +345,6 @@ img {
                 padding-right: 45px;
             }
 
-            .hidden {
-                display: none;
-            }
-
 @media (max-width: 960px) {
     #video_Box {
         height: 550px;
@@ -360,15 +355,15 @@ img {
             height: 400px;
         }
 
-    #image {
-        display: none;
-    }
+        #image {
+            display: none;
+        }
 
         .Before {
             display: none;
         }
 
-        #info_Box {
+        .info_Box_hidden {
             display: block;
         }
 
@@ -397,6 +392,7 @@ img {
             .infoText2 {
                 font-size: 14px;
             }
+
         #hrefText_Box {
             font-size: 14px;
             margin-top: 35%;
@@ -426,15 +422,3 @@ img {
         margin-top: 35%;
     }
 }
-
-/* @media (max-width: 615px) {
-    #container2 {
-        height: 200vh;
-    }
-    
-    .info {
-        flex-direction: column;
-        height: 40vh;
-        width: 80vh;
-    }
-} */

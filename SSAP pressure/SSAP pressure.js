@@ -44,19 +44,13 @@ var info3 = document.getElementsByClassName('info')[2]
 
 
 function open1() {
-    Before.classList.add('hidden')
-    info_Box.classList.toggle('hidden')
-    info1.classList.toggle('hidden')
+    
 }
 
 function open2() {
-    Before.classList.toggle('hidden')
-    info_Box.classList.toggle('hidden')
-    info2.classList.toggle('hidden')
+    
 }
 
 function open3() {
-    Before.classList.toggle('hidden')
-    info_Box.classList.toggle('hidden')
-    info3.classList.toggle('hidden')
+    
 }
