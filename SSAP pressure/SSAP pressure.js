@@ -16,7 +16,7 @@ var texts = [
 for (var i in texts) {
     var text = texts[i];
     document.getElementById("info_Box").innerHTML += `
-    <div class="info hidden">
+    <div class="info info_hidden">
         <div class="info_image">
             확대사진
         </div>
@@ -32,25 +32,30 @@ for (var i in texts) {
     `;
 }
 
-var icon1 =  document.getElementById('icon1')
-var icon2 =  document.getElementById('icon2')
-var icon3 =  document.getElementById('icon3')
-
 var Before = document.getElementsByClassName('Before')[0]
 var info_Box = document.getElementById('info_Box')
 var info1 = document.getElementsByClassName('info')[0]
 var info2 = document.getElementsByClassName('info')[1]
 var info3 = document.getElementsByClassName('info')[2]
 
+function imagehover() {
+    Before.classList.toggle('Before_hidden')
+    info_Box.classList.toggle('info_Box_hidden')
+}
+
+function imageout() {
+    Before.classList.toggle('Before_hidden')
+    info_Box.classList.toggle('info_Box_hidden')
+}
 
 function open1() {
-    
+    info1.classList.toggle('info_hidden')
 }
 
 function open2() {
-    
+    info2.classList.toggle('info_hidden')
 }
 
 function open3() {
-    
+    info3.classList.toggle('info_hidden')
 }
