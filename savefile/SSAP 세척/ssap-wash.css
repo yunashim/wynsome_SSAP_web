@@ -1,3 +1,6 @@
+body {
+    margin: 0;
+}
 .header {
     z-index: 99;
     width: 100%;
@@ -5,8 +8,8 @@
     display: flex;
     flex-direction: row;
     position: fixed;
-    top: 0;
     left: 0;
+    top: 0;
     background-color: #326148;
     align-items: center;
     font-family: 'Gothic A1', sans-serif;
@@ -27,7 +30,7 @@
     display: flex;
     flex-direction: row;
     margin-left: 163px;
-    width: 800px;
+    width: 50rem;
     justify-content: space-around;
 }
 a {
@@ -133,6 +136,13 @@ a {
 
 
 
+
+
+
+
+
+
+
 /* ---------------------- */
 
 body {
@@ -141,6 +151,7 @@ body {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    height: 100%;
 }
 
 .container {
@@ -169,14 +180,14 @@ body {
 
             .mid {
                 width: 100%;
-                max-width: 960px;
+                max-width: 60rem;
                 background-color: #EBE8E3;
                 height: 100vh;
             }
 
             .midGreen {
                 width: 100%;
-                max-width: 960px;
+                max-width: 60rem;
                 background-color: #7B937F;
                 height: 100vh;
             }
@@ -188,80 +199,156 @@ body {
                     display: flex;
                     flex-flow: row nowrap;
                 }
-    
+        
 
 
 /* page 1 */
-.page1Box {
+
+#animationWater {
+    background-color: antiquewhite;
+    height: 100%;
+    /* width: 540px; */
+    width: 33.75rem;
+}
+
+#waterSideTextBox1 {
+    height: 100%;
+    /* width: 420px; */
+    width: 26.25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+    #waterSideText1 {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+        #waterSSAP {
+            /* font-size: 60px; */
+            font-size: 3.75rem;
+        }
+
+        #waterRolling {
+            background-color: black;
+            /* width: 200px; */
+            width: 12.5rem;
+            /* height: 70px; */
+            height: 4.375rem;
+            /* font-size: 20px; */
+            font-size: 1.25rem;
+        }
+
+        #washerText {
+            /* font-size: 55px; */
+            font-size: 3.5rem;
+            margin-top: 0.9rem;
+        }
+
+
+
+/* page 2 */
+#waterSideTextBox2 {
+    z-index: 1;
     width: 100%;
     height: 100%;
     display: flex;
     flex-flow: column nowrap;
 }
 
-#photoSlide {
-    width: 100%;
-    height: 70%;
-    margin-top: 40px;
-    background-color: black;
-}
-
-.pageText1 {
-    font-size: 60px;
-    margin-top: 30px;
-}
-
-
-/* page 2 */
-.page2Box {
-    width: 100%;
-    height: 100%;
-    display: grid;
-    /* row-gap: 40px; */
-    grid-template-columns: repeat(auto-fill, minmax(420px, 1fr));
-}
-
-    .personalInfo {
-        /* width: 420px; */
-        /* height: 250px; */
-        width: 100%;
-        height: 100%;
+    .sideText2 {
         display: flex;
-        justify-content: center;
-        align-items: center;
+        flex-flow: column;
+        justify-content: right;
+        /* margin-top: 130px; */
+        margin-top: 8rem;
+        /* margin-right: 100px; */
+        margin-right: 6.25rem;
+        /* margin-left: 100px; */
+        margin-left: 6.25rem;
     }
 
-        .personalPhoto {
+        .greenTitle {
+            text-align: right;
+            /* font-size: 30px; */
+            font-size: 1.875rem;
+            font-weight: bold;
+            color: #90A791;
+        }
+
+        .subText2 {
+            text-align: right;
+            /* font-size: 18px; */
+            font-size: 1.125rem;
+        }
+
+
+/* page 3 */
+
+#timeLine {
+    /* width: 960px; */
+    width: 60rem;
+    height: calc(100vh - 73px);
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+    justify-content: center;
+    align-items: center;
+}
+
+    .timeLineBox {
+        height: 37.5rem;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        flex-flow: column wrap;
+    }
+
+        .timeBox {
             background-color: black;
-            width: 420px;
-            height: 250px;
+            /* width: 150px; */
+            width: 9.375rem;
+            /* height: 170px; */
+            height: 10.625rem;
+            margin-bottom: 0;
+        }
+
+        .timeBox:hover ~ .timeText {
+            display: inline-block;
+        }
+
+        .timeText:hover {
+            display: inline-block;
+        }
+
+        .timeText {
+            /* padding-top: 10px; */
+            padding-top: 0.625rem;
+            margin: 0;
+            display: none;
+            /* width: 150px; */
+            width: 9.375rem;
+            /* height: 200px; */
+            height: 12.5rem;
         }
 
 @media (max-width: 839px) {
-    .container {
-        scroll-snap-type: y proximity;
-    }
-
-    .page2Box {
-        row-gap: 40px;
-    }
-
-    .page2 {
-        height: 1300px;
+    #timeline {
+        row-gap: 20px;
+        grid-template-rows: repeat(auto-fill, minmax(25%, 1fr));
     }
 }
 
-@media (max-width: 500px) {
-    .personalPhoto {
-        width: 320px;
-        height: 190px;
-    }
-
-    .personalInfo {
-        width: 100%;
-    }
-
-    .page2 {
-        height: 1000px;
+@media (max-width: 642px) {
+    .sideText2 {
+        margin-top: 2rem;
+        margin-right: 2rem;
+        margin-left: 2rem;
     }
 }
+
+
+/* Breaking Points 780, 716*/
