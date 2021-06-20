@@ -1,0 +1,285 @@
+body {
+    margin: 0;
+    background-color: #89A78F;
+}
+
+.header {
+    z-index: 99;
+    width: 100%;
+    height: 73px;
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    background-color: #326148;
+    align-items: center;
+    font-family: 'Gothic A1', sans-serif;
+}
+.teamlogo {
+    width: 273px;
+    height: 73px;
+    color: white;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: black;
+    margin-left: 30px;
+}
+.headermenu {
+    display: flex;
+    flex-direction: row;
+    margin-left: 163px;
+    width: 800px;
+    justify-content: space-around;
+}
+a {
+    text-decoration: none;
+    list-style-type: none;
+    color: white;
+    font-size: 18px;
+}
+.firstmenu, .secondmenu, .thirdmenu {
+    display: flex;
+    flex-direction: column;
+}
+.firstmenuline, .thirdmenuline {
+    border-style: solid;
+    border-width: 1px;
+    border-color: #326148;
+    z-index: 99;
+}
+.secondmenuline {
+    border-style: solid;
+    border-width: 1px;
+    border-color: white;
+    z-index: 99;
+}
+.firstmenutext:hover > .firstmenuline {
+    border-style: solid;
+    border-width: 1px;
+    border-color: white;
+    z-index: 99;
+}
+.thirdmenutext:hover > .thirdmenuline {
+    border-style: solid;
+    border-width: 1px;
+    border-color: white;
+    z-index: 99;
+}
+.secondmenu {
+    position: relative;
+    z-index: 9;
+}
+.servemenu {
+    position: absolute;
+    left: -4px;
+    width: 110px;
+    height: 198px;
+    color: white;
+    font-size: 18px;
+    font-family: 'Gothic A1', sans-serif;
+    display: none;
+}
+.servemenu-content {
+    width: 100%;
+    height: 100px;
+    background-color: #326148;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.servemenu:hover {
+    display: flex;
+}
+.secondmenu:hover > .servemenu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.firstservemenu {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.secondservemenu {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.firstservemenu:hover {
+    background-color: white;
+    border-style: solid;
+    border-color: gray;
+    border-width: 1px;
+}
+.secondservemenu:hover {
+    background-color: white;
+    border-style: solid;
+    border-color: gray;
+    border-width: 1px;
+}
+.firstservemenu:hover > a {
+    color: #326148;
+}
+.secondservemenu:hover > a{
+    color: #326148;
+}
+
+
+#contents_box {
+    width: 100%;
+    max-width: 960px;
+    height: 100vh;
+    background-color: #7B937F;
+    margin: auto;
+}
+
+    #container1 {
+        width: 100%;
+        max-width: 764px;
+        height: 50vh;
+        margin: auto;
+        padding: 30vh 0 20vh 0;
+        display: flex;
+    }
+
+        .Left_Box {
+            width: 25%;
+            height: 50vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .Right_Box {
+            width: 25%;
+            height: 50vh;
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: center;
+        }
+        
+            .Circle {
+                background-color: white;
+                width: 100%;
+                height: 96%;
+                max-height: 193px;
+                border-radius: 50%;
+                border: solid black 1px;
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                justify-content: center;
+                font-size: 15px;
+                cursor: pointer;
+            }
+
+                .Circle:hover ~ .TextBox {
+                    color: white;
+                }
+
+            .TextBox {
+                width: 80%;
+                height: 100%;
+                max-height: 152.8px;
+                font-size: 15px;
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                justify-content: center;
+                color: #7B937F;
+                margin-top: 0;
+                margin-bottom: auto;
+            }
+
+                .Right_Box > .TextBox {
+                    margin-top: auto;
+                    margin-bottom: 0;
+                }
+
+@media (max-width: 960px) {
+    #container1 {
+        flex-direction: column;
+        height: 80vh;
+        padding: 15vh 0 5vh 0;
+        align-items: center;
+    }
+        .Left_Box {
+            flex-direction: row;
+            width: 80%;
+            height: 25%;
+            justify-content: center;
+        }
+        .Right_Box {
+            flex-direction: row;
+            width: 80%;
+            height: 25%;
+            justify-content: center;
+        }
+
+            .Circle {
+                width: 24%;
+                max-width: 160px;
+                margin: 0;
+                margin: 0.5% 0;
+                margin-right: 15px;
+            }
+
+            .TextBox {
+                width: 50%;
+            }
+
+                .Circle:hover ~ .TextBox {
+                    border: solid white 1px;
+                }
+
+                .Circle:hover {
+                    margin-right: 13px;
+                }
+}
+
+@media (max-width: 760px) {
+    #contents_box {
+        height: 220vh;
+    }
+
+    #container1 {
+        height: 200vh;
+    }
+
+        .Left_Box, .Right_Box {
+            flex-direction: column;
+            margin-top: 10px;
+        }
+
+            .Circle {
+                height: 80%;
+                max-height: 162px;
+                width: 100%;
+                margin: 0;
+                margin-bottom: 15px;
+            }
+
+                .Circle:hover {
+                    margin-right: 0;
+                    margin-bottom: 13px;
+                }
+            
+            .TextBox {
+                margin: 0;
+            }
+
+            .Right_Box > .TextBox {
+                margin: 0;
+            }
+}
