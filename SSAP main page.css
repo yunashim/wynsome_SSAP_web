@@ -10,6 +10,8 @@ body {
     display: flex;
     flex-direction: row;
     position: fixed;
+    left: 0;
+    top: 0;
     background-color: #326148;
     align-items: center;
     font-family: 'Gothic A1', sans-serif;
