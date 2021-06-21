@@ -46,7 +46,7 @@ a {
     border-color: #326148;
     z-index: 99;
 }
-.secondmenuline {
+.secondmenutext:hover > .secondmenuline {
     border-style: solid;
     border-width: 1px;
     border-color: white;
@@ -58,7 +58,7 @@ a {
     border-color: white;
     z-index: 99;
 }
-.thirdmenutext:hover > .thirdmenuline {
+.thirdmenuline {
     border-style: solid;
     border-width: 1px;
     border-color: white;
@@ -232,6 +232,7 @@ body {
         height: 100%;
         display: flex;
         justify-content: center;
+        justify-self: center;
         align-items: center;
     }
 
@@ -266,6 +267,32 @@ body {
     .personalPhoto {
         /* width: 320px; */
         width: 20rem;
+        /* height: 190px; */
+        height: 11.875rem;
+    }
+
+    .personalInfo {
+        width: 100%;
+    }
+
+    .page2 {
+        /* height: 1000px; */
+        height: 62.5rem;
+    }
+}
+
+@media (max-width: 425px) {
+    .container {
+        scroll-snap-type: none;
+        width: fit-content;
+        height: fit-content;
+        justify-content: center;
+        overflow-x: hidden;
+    }
+
+    .personalPhoto {
+        /* width: 320px; */
+        width: 18rem;
         /* height: 190px; */
         height: 11.875rem;
     }
