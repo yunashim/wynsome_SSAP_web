@@ -236,9 +236,12 @@ a {
     margin-left: 125px;
     display: none;
 }
-.go {
+.hidden {
+    display: none;
+}
+/* .go {
     transform: translate(0px, -150px);
 }
 .see {
     display: block;
-}
+} */
