@@ -289,13 +289,12 @@ a {
         z-index: -2;
         position: absolute;
         left: 0px;
-        top: 288px;
         background-color: #EBE8E3;
         width: 100%;
-        height: 2500px;
+        height: 2750px;
     }
     .text {
-        margin-top: 100px;
+        margin-top: 200px;
         margin-left: 5px;
         text-align: center;
     }
@@ -309,17 +308,23 @@ a {
     }
     .motionbox1 {
         width: 100%;
-        top: 2287px;
+        top: 2450px;
     }
     .firstcircle {
+        top: 1400px;
         left: 50px;
     }
+    .firsttext {
+        top: 1530px;
+    }
     .secondcircle {
-        top: 1600px;
+        position: absolute;
+        top: 1950px;
         left: -30px;
     }
     .secondtext {
-        top: 1730px;
+        position: absolute;
+        top: 2080px;
         left: 116px;
     }
 }
