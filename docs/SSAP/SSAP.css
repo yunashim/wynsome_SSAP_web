@@ -175,27 +175,22 @@ a {
     margin-left: 1000px;
     width: 440px;
     height: 250px;
-    background-image: url(../KakaoTalk_Photo_2021-06-16-22-04-36.png);
+    background-color: #326148;
+    opacity: 50%;
 }
 .motionbox1 {
     z-index: 0;
     position: absolute;
     top: 1070px;
-    left: 0px;
     width: 500px;
     height: 500px;
     background-color: black;
     opacity: 50%;
 }
-.circle {
-    display: flex;
-    flex-direction: row;
+.firstcircle {
     position: absolute;
     left: 360px;
     top: 1100px;
-    margin-bottom: 30px;
-}
-.firstcircle {
     width: 230px;
     height: 230px;
     border-style: solid;
@@ -208,6 +203,9 @@ a {
     justify-content: center;
 }
 .secondcircle {
+    position: absolute;
+    left: 600px;
+    top: 1100px;
     width: 230px;
     height: 230px;
     border-style: solid;
@@ -220,20 +218,20 @@ a {
     justify-content: center;
     margin-left: 77px;
 }
-.circleundertext {
-    z-index: 1;
-    display: flex;
+.firsttext {
     position: absolute;
-    top: 1250px;
-    flex-direction: row;
+    top: 1230px;
+    left: 110px;
+    z-index: 1;
     font-family: 'Gothic A1', sans-serif;
-}
-.firstcircleundertext {
-    margin-left: 45px;
     display: none;
 }
-.secondcircleundertext {
-    margin-left: 125px;
+.secondtext {
+    z-index: 1;
+    position: absolute;
+    top: 1230px;
+    left: 640px;
+    font-family: 'Gothic A1', sans-serif;
     display: none;
 }
 .hidden {
