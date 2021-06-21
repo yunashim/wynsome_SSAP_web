@@ -306,3 +306,81 @@ body {
         height: 62.5rem;
     }
 }
+
+
+
+@media(max-width: 960px) {
+    .headermenu {
+        display: none;
+    }
+    .clickmenu {
+        display: block;
+        color: white;
+        font-size: 25px;
+        margin-left: 240px;
+    }
+    .newmenu {
+        position: relative;
+        top: 80px;
+        background-color: #326148;
+        color: white;
+        font-family: 'Gothic A1', sans-serif;
+        width: 100%;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .smallbackground {
+        z-index: -2;
+        position: absolute;
+        left: 0px;
+        background-color: #EBE8E3;
+        width: 100%;
+        height: 2750px;
+    }
+    .text {
+        margin-top: 200px;
+        margin-left: 5px;
+        text-align: center;
+    }
+    .motionbox {
+        width: 100%;
+        top: 670px;
+    }
+    .SSAP {
+        top: 970px;
+        left: 162px;
+    }
+    .motionbox1 {
+        width: 100%;
+        top: 2450px;
+    }
+    .firstcircle {
+        top: 1400px;
+        left: 50px;
+    }
+    .firsttext {
+        top: 1530px;
+    }
+    .secondcircle {
+        position: absolute;
+        top: 1950px;
+        left: -30px;
+    }
+    .secondtext {
+        position: absolute;
+        top: 2080px;
+        left: 116px;
+    }
+}
+.hidden {
+    display: none;
+}
+.go {
+    transform: translate(0px, -150px);
+}
+.see {
+    display: block;
+}
