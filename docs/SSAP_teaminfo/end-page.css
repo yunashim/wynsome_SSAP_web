@@ -281,7 +281,7 @@ body {
     scroll-behavior: smooth;
     flex-flow: column nowrap;
     scroll-snap-type: y mandatory;
-    overflow: auto;
+    overflow-x: hidden;
 }
 
     .safeZone {
@@ -458,6 +458,10 @@ body {
     .page2 {
         height: 1200px;
         height: 75rem;
+    }
+
+    .safeZone {
+        scroll-snap-align: none;
     }
 }
 
