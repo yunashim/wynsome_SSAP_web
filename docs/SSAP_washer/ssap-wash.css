@@ -158,7 +158,6 @@ body {
     width: 100%;
     height: 100vh;
     display: flex;
-    scroll-behavior: smooth;
     flex-flow: column nowrap;
     scroll-snap-type: y mandatory;
     overflow: auto;
