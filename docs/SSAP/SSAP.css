@@ -1,6 +1,5 @@
 body {
     margin: 0;
-    background-color: #F6F3ED;
 }
 .header {
     z-index: 99;
@@ -132,6 +131,36 @@ a {
 .secondservemenu:hover > a{
     color: #326148;
 }
+.clickmenu {
+    display: none;
+}
+.newmenu {
+    display: none;
+}
+.newfirstmenuline, .newsecondmenuline, .newthirdmenuline {
+    border-style: solid;
+    border-width: 1px;
+    border-color: #326148;
+    z-index: 99;
+}
+.newfirstmenutext:hover > .newfirstmenuline {
+    border-style: solid;
+    border-width: 1px;
+    border-color: white;
+    z-index: 99;
+}
+.newsecondmenutext:hover > .newsecondmenuline {
+    border-style: solid;
+    border-width: 1px;
+    border-color: white;
+    z-index: 99;
+}
+.newthirdmenutext:hover > .newthirdmenuline {
+    border-style: solid;
+    border-width: 1px;
+    border-color: white;
+    z-index: 99;
+}
 .smallbackground {
     z-index: -2;
     position: absolute;
@@ -162,7 +191,7 @@ a {
     z-index: 0;
     position: absolute;
     left: 0px;
-    margin-top: 521px;
+    top: 521px;
     width: 1000px;
     height: 300px;
     background-color: black;
@@ -171,8 +200,8 @@ a {
 .SSAP {
     z-index: 0;
     position: absolute;
-    margin-top: 600px;
-    margin-left: 1000px;
+    top: 600px;
+    left: 1000px;
     width: 440px;
     height: 250px;
     background-color: #326148;
@@ -227,12 +256,72 @@ a {
     display: none;
 }
 .secondtext {
-    z-index: 1;
     position: absolute;
     top: 1230px;
     left: 640px;
     font-family: 'Gothic A1', sans-serif;
     display: none;
+}
+@media(max-width: 960px) {
+    .headermenu {
+        display: none;
+    }
+    .clickmenu {
+        display: block;
+        color: white;
+        font-size: 25px;
+        margin-left: 240px;
+    }
+    .newmenu {
+        position: relative;
+        top: 80px;
+        background-color: #326148;
+        color: white;
+        font-family: 'Gothic A1', sans-serif;
+        width: 100%;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .smallbackground {
+        z-index: -2;
+        position: absolute;
+        left: 0px;
+        top: 288px;
+        background-color: #EBE8E3;
+        width: 100%;
+        height: 2500px;
+    }
+    .text {
+        margin-top: 100px;
+        margin-left: 5px;
+        text-align: center;
+    }
+    .motionbox {
+        width: 100%;
+        top: 670px;
+    }
+    .SSAP {
+        top: 970px;
+        left: 162px;
+    }
+    .motionbox1 {
+        width: 100%;
+        top: 2287px;
+    }
+    .firstcircle {
+        left: 50px;
+    }
+    .secondcircle {
+        top: 1600px;
+        left: -30px;
+    }
+    .secondtext {
+        top: 1730px;
+        left: 116px;
+    }
 }
 .hidden {
     display: none;
