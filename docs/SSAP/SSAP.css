@@ -239,9 +239,9 @@ a {
 .hidden {
     display: none;
 }
-/* .go {
+.go {
     transform: translate(0px, -150px);
 }
 .see {
     display: block;
-} */
+}
