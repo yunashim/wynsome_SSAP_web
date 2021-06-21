@@ -161,16 +161,15 @@ a {
     border-color: white;
     z-index: 99;
 }
-.hidden {
-    display: none;
-}
 @media(max-width: 960px) {
     .headermenu {
         display: none;
     }
     .clickmenu {
         display: block;
-        margin-left: 270px;
+        color: white;
+        font-size: 25px;
+        margin-left: 240px;
     }
     .newmenu {
         position: absolute;
@@ -185,4 +184,7 @@ a {
         justify-content: space-around;
         align-items: center;
     }
+}
+.hidden {
+    display: none;
 }
