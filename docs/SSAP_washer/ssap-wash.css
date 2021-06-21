@@ -326,6 +326,10 @@ body {
     display: inline-block;
 }
 
+/* .showw {
+    display: flex;
+} */
+
 .timeText:hover {
     display: inline-block;
 }
