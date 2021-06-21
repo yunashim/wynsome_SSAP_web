@@ -1,4 +1,4 @@
-body {
+body, ul, li {
     margin: 0;
 }
 
@@ -149,7 +149,7 @@ a {
 }
 
 .contents_box {
-    background-color: #e0e0e0;
+    background-color: #EBE8E3;
     width: 100vw;
     max-width: 960px;
     height: 100vh;
@@ -278,10 +278,23 @@ a {
             }
 
             #Changing_Text {
-                background-color: black;
-                height: 65px;
-                width: 40%;
+                display: inline-block;
+                height: 35px;
+                line-height: 1;
+                overflow: hidden;
+                font-size: 37px;
+                text-align: center;
             }
+
+                ul{
+                    margin-top: -70px;
+                    margin: 0;
+                    padding: 0;
+                }
+
+                li{
+                    list-style-type: none;
+                }
 
             #Compressor {
                 margin: 10px auto;
