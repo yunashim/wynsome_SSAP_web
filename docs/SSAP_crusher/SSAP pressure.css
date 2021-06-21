@@ -190,7 +190,7 @@ a {
     }
 
         #image {
-            background-image: url(./제목_없는_아트워크1.png);
+            background-image: url(../IMG/제목_없는_아트워크1.png);
             height: 600px;
             width: 280px;
             margin: 0 auto;
@@ -198,22 +198,62 @@ a {
             flex-direction: column;
         }
 
+        #image:hover > i{
+            animation: shake 0.5s infinite;
+        }
+
+        @keyframes shake {
+            0%{
+                transform: translate(1px, 1px) rotate(0deg);
+            }
+            10%{
+                transform: translate(-1px, -1px) rotate(1deg);
+            }
+            20%{
+                transform: translate(-2px, 1px) rotate(-1deg);
+            }
+            30%{
+                transform: translate(1px, 2px) rotate(0deg);
+            }
+            40%{
+                transform: translate(-1px, 1px) rotate(1deg);
+            }
+            50%{
+                transform: translate(1px, -1px) rotate(-2deg);
+            }
+            60%{
+                transform: translate(2px, 1px) rotate(1deg);
+            }
+            70%{
+                transform: translate(-1px, 2px) rotate(2deg);
+            }
+            80%{
+                transform: translate(2px, -1px) rotate(1deg);
+            }
+            90%{
+                transform: translate(-1px, 2px) rotate(0deg);
+            }
+            100%{
+                transform: translate(2px, 1px) rotate(-1deg);
+            }
+        }
+
             .fa-exclamation-circle {
                 font-size: 20px;
                 cursor: pointer;
-                color: black;
+                color: rgb(16, 31, 100);
             }
             
             #icon1 {
-                margin: 100px 70px auto auto;
+                margin: 100px 75px auto auto;
             }
 
             #icon2 {
-                margin: 200px 70px auto auto;
+                margin: 200px 65px auto auto;
             }
 
             #icon3 {
-                margin: auto 70px 100px auto;
+                margin: auto 50px 100px auto;
             }
 
         .Before {
