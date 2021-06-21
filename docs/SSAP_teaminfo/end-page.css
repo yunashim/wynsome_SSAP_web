@@ -447,7 +447,8 @@ body {
 
 @media (max-width: 839px) {
     .container {
-        scroll-snap-type: y proximity;
+        scroll-snap-type: none;
+        scroll-behavior: none;
     }
 
     .page2Box {
