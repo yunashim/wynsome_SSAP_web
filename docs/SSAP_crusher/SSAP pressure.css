@@ -277,24 +277,28 @@ a {
                 text-shadow: 2px 2px 1px black;
             }
 
-            #Changing_Text {
-                display: inline-block;
+            #Changing_Text_Box {
                 height: 35px;
-                line-height: 1;
                 overflow: hidden;
-                font-size: 37px;
-                text-align: center;
             }
 
-                ul{
-                    margin-top: -70px;
-                    margin: 0;
-                    padding: 0;
+                #Changing_Text {
+                    display: inline-block;
+                    line-height: 1;
+                    font-size: 35px;
+                    text-align: center;
+                    margin-top: -35px;
                 }
 
-                li{
-                    list-style-type: none;
-                }
+                    ul{
+                        margin-top: -70px;
+                        margin: 0;
+                        padding: 0;
+                    }
+
+                    li{
+                        list-style-type: none;
+                    }
 
             #Compressor {
                 margin: 10px auto;
