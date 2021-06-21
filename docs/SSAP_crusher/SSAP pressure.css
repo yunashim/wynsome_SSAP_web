@@ -199,7 +199,7 @@ a {
         }
 
         #image:hover > i{
-            animation: shake 0.5s infinite;
+            animation: shake 1s infinite;
         }
 
         @keyframes shake {
@@ -271,7 +271,6 @@ a {
             #SSAP_Text {
                 font-size: 35pt;
                 font-weight: bolder;
-                padding-bottom: 5px;
                 font-style: italic;
                 color: #326148;
                 text-shadow: 2px 2px 1px black;
@@ -280,14 +279,13 @@ a {
             #Changing_Text_Box {
                 height: 35px;
                 overflow: hidden;
+                line-height: 1;
             }
 
                 #Changing_Text {
                     display: inline-block;
-                    line-height: 1;
                     font-size: 35px;
                     text-align: center;
-                    margin-top: -35px;
                 }
 
                     ul{
