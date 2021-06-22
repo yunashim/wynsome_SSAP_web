@@ -15,7 +15,6 @@ body {
     align-items: center;
     font-family: 'Gothic A1', sans-serif;
 }
-
 .teamlogo {
     width: 273px;
     height: 73px;
@@ -28,60 +27,51 @@ body {
     background-color: black;
     margin-left: 30px;
 }
-
 .headermenu {
     display: flex;
     flex-direction: row;
     margin-left: 163px;
-    width: 50rem;
+    width: 800px;
     justify-content: space-around;
 }
-
 a {
     text-decoration: none;
     list-style-type: none;
     color: white;
     font-size: 18px;
 }
-
 .firstmenu, .secondmenu, .thirdmenu {
     display: flex;
     flex-direction: column;
 }
-
-.firstmenuline, .thirdmenuline {
+.secondmenuline, .thirdmenuline {
     border-style: solid;
     border-width: 1px;
     border-color: #326148;
     z-index: 99;
 }
-
-.secondmenuline {
+.firstmenutext:hover > .firstmenuline {
     border-style: solid;
     border-width: 1px;
     border-color: white;
     z-index: 99;
 }
-
-.firstmenutext:hover>.firstmenuline {
+.secondmenutext:hover > .secondmenuline {
     border-style: solid;
     border-width: 1px;
     border-color: white;
     z-index: 99;
 }
-
-.thirdmenutext:hover>.thirdmenuline {
+.thirdmenuline {
     border-style: solid;
     border-width: 1px;
     border-color: white;
     z-index: 99;
 }
-
 .secondmenu {
     position: relative;
     z-index: 9;
 }
-
 .servemenu {
     position: absolute;
     left: -4px;
@@ -92,7 +82,6 @@ a {
     font-family: 'Gothic A1', sans-serif;
     display: none;
 }
-
 .servemenu-content {
     width: 100%;
     height: 100px;
@@ -102,18 +91,15 @@ a {
     align-items: center;
     justify-content: center;
 }
-
 .servemenu:hover {
     display: flex;
 }
-
-.secondmenu:hover>.servemenu {
+.secondmenu:hover > .servemenu {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
-
 .firstservemenu {
     width: 100%;
     height: 60px;
@@ -122,7 +108,6 @@ a {
     align-items: center;
     justify-content: center;
 }
-
 .secondservemenu {
     width: 100%;
     height: 60px;
@@ -131,27 +116,154 @@ a {
     align-items: center;
     justify-content: center;
 }
-
 .firstservemenu:hover {
     background-color: white;
     border-style: solid;
     border-color: gray;
     border-width: 1px;
 }
-
 .secondservemenu:hover {
     background-color: white;
     border-style: solid;
     border-color: gray;
     border-width: 1px;
 }
-
-.firstservemenu:hover>a {
+.firstservemenu:hover > a {
     color: #326148;
 }
-
-.secondservemenu:hover>a {
+.secondservemenu:hover > a{
     color: #326148;
+}
+.clickmenu {
+    display: none;
+}
+.newmenu {
+    display: none;
+}
+.newfirstmenuline, .newsecondmenuline, .newthirdmenuline {
+    border-style: solid;
+    border-width: 1px;
+    border-color: #326148;
+    z-index: 99;
+}
+.newfirstmenutext:hover > .newfirstmenuline {
+    border-style: solid;
+    border-width: 1px;
+    border-color: white;
+    z-index: 99;
+}
+.newsecondmenutext:hover > .newsecondmenuline {
+    border-style: solid;
+    border-width: 1px;
+    border-color: white;
+    z-index: 99;
+}
+.newthirdmenutext:hover > .newthirdmenuline {
+    border-style: solid;
+    border-width: 1px;
+    border-color: white;
+    z-index: 99;
+}
+.smallbackground {
+    z-index: -2;
+    position: absolute;
+    left: 236px;
+    background-color: #EBE8E3;
+    width: 100%;
+    max-width: 960px;
+    height: 1570px;
+}
+.text {
+    z-index: -1;
+    margin-top: 150px;
+    margin-left: 50px;
+    font-family: 'Gothic A1', sans-serif;
+}
+.bigtext {
+    font-size: 25pt;
+    font-weight: bold;
+    color: black;
+    margin-top: 60px;
+    margin-bottom: 10px;
+}
+.smalltext {
+    font-size: 14pt;
+    color: gray;
+}
+.motionbox {
+    z-index: 0;
+    position: absolute;
+    left: 0px;
+    top: 521px;
+    width: 1000px;
+    height: 300px;
+    background-color: black;
+    opacity: 50%;
+}
+.SSAP {
+    z-index: 0;
+    position: absolute;
+    top: 600px;
+    left: 1000px;
+    width: 440px;
+    height: 250px;
+    background-color: #326148;
+    opacity: 50%;
+}
+.motionbox1 {
+    z-index: 0;
+    position: absolute;
+    top: 1070px;
+    width: 500px;
+    height: 500px;
+    background-color: black;
+    opacity: 50%;
+}
+.firstcircle {
+    position: absolute;
+    left: 360px;
+    top: 1100px;
+    width: 230px;
+    height: 230px;
+    border-style: solid;
+    border-color: black;
+    border-width: 4px;
+    border-radius: 50%;
+    background-color: gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.secondcircle {
+    position: absolute;
+    left: 600px;
+    top: 1100px;
+    width: 230px;
+    height: 230px;
+    border-style: solid;
+    border-color: black;
+    border-width: 4px;
+    border-radius: 50%;
+    background-color: gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 77px;
+}
+.firsttext {
+    position: absolute;
+    top: 1230px;
+    left: 110px;
+    z-index: 1;
+    font-family: 'Gothic A1', sans-serif;
+    display: none;
+}
+.secondtext {
+    position: absolute;
+    top: 1230px;
+    left: 640px;
+    font-family: 'Gothic A1', sans-serif;
+    display: none;
 }
 
 /* ---------------------------------------------------------- */
@@ -241,13 +353,58 @@ body {
 }
 
 #waterRolling {
-    background-color: black;
     /* width: 200px; */
     width: 12.5rem;
     /* height: 70px; */
-    height: 4.375rem;
+    height: 3rem;
     /* font-size: 20px; */
-    font-size: 1.25rem;
+    font-size: 3rem;
+    line-height: 1;
+    overflow: hidden;
+    border: black 3px solid;
+
+}
+
+#Changing_Text {
+    height: 1.5em;
+    overflow: hidden;
+    display: inline-block;
+    text-align: center;
+}
+
+    ul{
+        margin: 0;
+        padding: 0;
+        animation-name: rolling;
+        animation-duration: 6s;
+        animation-iteration-count: infinite;
+        animation-direction: reverse;
+    }
+
+    li{
+        list-style-type: none;
+    }
+
+@keyframes rolling {
+    0% {
+        transform: translateY(0);
+    }
+
+    25% {
+        transform: translateY(-20%);
+    }
+
+    50% {
+        transform: translateY(-40%);
+    }
+
+    75% {
+        transform: translateY(-60%);
+    }
+
+    100% {
+        transform: translateY(-80%);
+    }
 }
 
 #washerText {
@@ -302,6 +459,10 @@ body {
     grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
     justify-content: center;
     align-items: center;
+    background-image: url(../images/gif_jerry_washer_history.gif);
+    background-size: 110%;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .timeLineBox {
@@ -343,6 +504,87 @@ body {
     width: 9.375rem;
     /* height: 200px; */
     height: 12.5rem;
+    background-color: #89a78faf;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+@media(max-width: 960px) {
+    .headermenu {
+        display: none;
+    }
+    .clickmenu {
+        display: block;
+        color: white;
+        font-size: 25px;
+        margin-right: 20px;
+        margin-left: auto;
+    }
+    .newmenu {
+        z-index: 99;
+        position: fixed;
+        top: 73px;
+        background-color: #326148;
+        color: white;
+        font-family: 'Gothic A1', sans-serif;
+        width: 100%;
+        height: 200px;
+        display: none;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .smallbackground {
+        z-index: -2;
+        position: absolute;
+        left: 0px;
+        background-color: #EBE8E3;
+        width: 100%;
+        height: 2750px;
+    }
+    .text {
+        margin-top: 200px;
+        margin-left: 5px;
+        text-align: center;
+    }
+    .motionbox {
+        width: 100%;
+        top: 670px;
+    }
+    .SSAP {
+        top: 970px;
+        left: 162px;
+    }
+    .motionbox1 {
+        width: 100%;
+        top: 2450px;
+    }
+    .firstcircle {
+        top: 1400px;
+        left: 50px;
+    }
+    .firsttext {
+        top: 1530px;
+    }
+    .secondcircle {
+        position: absolute;
+        top: 1950px;
+        left: -30px;
+    }
+    .secondtext {
+        position: absolute;
+        top: 2080px;
+        left: 116px;
+    }
+}
+.hidden {
+    display: flex;
+}
+.go {
+    transform: translate(0px, -150px);
+}
+.see {
+    display: block;
 }
 
 @media (max-width: 960px) {
@@ -355,10 +597,8 @@ body {
     .spacePage3 {
         align-items: center;
     }
-    #timeline {
-        height: 400px;
-        row-gap: 20px;
-        grid-template-rows: repeat(auto-fill, minmax(25%, 1fr));
+    #timeLine {
+        background-image: none;
     }
     .timeLineBox {
         height: 390px;
