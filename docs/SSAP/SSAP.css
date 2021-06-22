@@ -227,11 +227,8 @@ a {
     border-color: black;
     border-width: 4px;
     border-radius: 50%;
-}
-.firstcircle img {
-    width: 230px;
-    height: 230px;
-    border-radius: 50%;
+    background-image: url(./img_dobby_secondpage_incricle_1.png);
+    background-position: center;
 }
 .secondcircle {
     position: absolute;
@@ -248,6 +245,7 @@ a {
     align-items: center;
     justify-content: center;
     margin-left: 77px;
+    background-image: url(./img_dobby_secondpage_incircle_@.png);
 }
 .firsttext {
     position: absolute;
@@ -332,7 +330,7 @@ a {
     }
 }
 .hidden {
-    display: flex;
+    display: none;
 }
 .go {
     transform: translate(0px, -150px);
