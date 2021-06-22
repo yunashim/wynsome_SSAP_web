@@ -324,6 +324,7 @@ body {
 }
 
 #photoSlide {
+    min-width: 20rem;
     max-width: 60rem;
     height: fit-content;
     min-height: 200px;
@@ -340,7 +341,12 @@ body {
 }
 
 img {
-    width: 100%;
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    margin-top: -40px;
+    margin-left: -20px;
+    width: 110%;
 }
 
 .pageText1 {
@@ -495,7 +501,7 @@ img {
     }
     
     .page1 {
-        height: 40rem;
+        height: 35rem;
     }
 
     .page2 {
@@ -530,6 +536,10 @@ img {
 
     .personalInfo {
         width: 100%;
+    }
+
+    .page1 {
+        height: 30rem;
     }
 
     .page2 {

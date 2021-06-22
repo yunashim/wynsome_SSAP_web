@@ -622,6 +622,11 @@ body {
         margin-right: 2rem;
         margin-left: 2rem;
     }
+
+    #waterSideTextBox2 {
+        background-image: url(../images/img_jerry_washer-removebg-preview.png);
+        background-position: bottom 20px center;
+    }
 }
 
 @media (max-width: 479px) {
@@ -636,12 +641,13 @@ body {
     }
     #waterSideTextBox2 {
         height: 600px;
+        background-size: 15rem;
     }
     .page1 {
         height: 400px;
     }
     .page2 {
-        height: 500px;
+        height: 700px;
     }
     #timeline {
         row-gap: 40px;
