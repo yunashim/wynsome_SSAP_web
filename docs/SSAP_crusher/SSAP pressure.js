@@ -17,8 +17,7 @@ for (var i in texts) {
     var text = texts[i];
     document.getElementById("info_Box").innerHTML += `
     <div class="info info_hidden">
-        <div class="info_image">
-            확대사진
+        <div class="info_image detail_image${i}">
         </div>
         <div class="info_txt">
             <div id="info_Btxt">
