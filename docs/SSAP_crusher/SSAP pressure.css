@@ -152,14 +152,31 @@ a {
     background-color: #EBE8E3;
     width: 100vw;
     max-width: 960px;
-    height: 100vh;
+    height: 760px;
     margin: auto;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     scroll-snap-align: start;
 }
+
+img {
+    margin: 0;
+    padding: 0;
+}
+    img:nth-child(1) {
+        margin-left: -20%;
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+    img:nth-child(3) {
+        margin-right: -20%;
+        margin-bottom: 0;
+    }
+    img:nth-child(4) {
+        margin-right: -27%;
+        margin-top: 0;
+    }
 
     #video_Box {
         width: 100%;
@@ -190,7 +207,8 @@ a {
     }
 
         #image {
-            background-image: url();
+            background-image: url(../images/img_romme_squasher.png);
+            background-size: 100%;
             height: 600px;
             width: 280px;
             margin: 0 auto;
@@ -474,7 +492,20 @@ a {
 }
 
 @media (max-width: 630px) {
-    
+
+}
+
+@media (max-width: 1439px) {
+    img {
+        display: none;
+    }
+}
+
+@media (min-height: 1254px) {
+    #video_Box {
+        display: flex;
+        justify-content: center;
+    }
 }
 
 /* Animation */
