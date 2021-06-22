@@ -9,3 +9,13 @@ function move1() {
     document.querySelector(".secondcircle").classList.toggle("go")
     document.querySelector(".secondtext").classList.toggle("see")
 }
+
+
+var perphoto = document.getElementsByClassName("personalPhoto")
+var perInfo = document.getElementsByClassName("")
+for (var i in perphoto) {
+    var photo = perphoto[i]
+    photo.addEventListener('click', function show() {
+        
+    })
+}
