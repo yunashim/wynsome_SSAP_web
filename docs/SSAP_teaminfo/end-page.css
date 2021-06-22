@@ -385,6 +385,11 @@ img {
             height: 15rem;
         }
 
+        .photo1 {
+            background-image: url(../images/jerry_photo.jpg);
+            background-size: 100%;
+        }
+
 
 @media(max-width: 960px) {
     .headermenu {
