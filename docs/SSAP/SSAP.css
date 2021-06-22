@@ -228,7 +228,7 @@ a {
     border-color: black;
     border-width: 4px;
     border-radius: 50%;
-    background-image: url(./img_dobby_secondpage_incricle_1.png);
+    background-image: url(../images/img_dobby_secondpage_incricle_1.png);
     background-position: center;
 }
 .secondcircle {
@@ -247,7 +247,7 @@ a {
     align-items: center;
     justify-content: center;
     margin-left: 77px;
-    background-image: url(./img_dobby_secondpage_incircle_@.png);
+    background-image: url(../images/img_dobby_secondpage_incircle_@.png);
 }
 .firsttext {
     position: absolute;
@@ -287,6 +287,7 @@ a {
         position: fixed;
         top: 73px;
         background-color: #326148;
+        opacity: 50%;
         color: white;
         font-family: 'Gothic A1', sans-serif;
         width: 100%;
