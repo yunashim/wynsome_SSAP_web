@@ -29,8 +29,7 @@ body {
     width: 100%;
     height: 80vh;
     margin: 0 auto;
-    left: 0;
-    right: 0;
+    padding-left: 150px;
 }
 
 .textbox1 {
