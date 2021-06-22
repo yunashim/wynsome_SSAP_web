@@ -162,19 +162,22 @@ a {
     z-index: 99;
 }
 @media(max-width: 960px) {
+    .header, .teamlogo {
+        height: 40px;
+    }
     .headermenu {
         display: none;
     }
     .clickmenu {
         display: block;
         color: white;
-        font-size: 25px;
+        font-size: 22px;
         margin-right: 20px;
         margin-left: auto;
     }
     .newmenu {
-        position: absolute;
-        top: 80px;
+        position: fixed;
+        top: 50px;
         background-color: #326148;
         opacity: 50%;
         color: white;
@@ -185,6 +188,10 @@ a {
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
+        display: none;
+    }
+    .show {
+        display: flex;
     }
     .newfirstmenu, .newsecondmenu, .newthirdmenu {
         height: 60px;
@@ -222,7 +229,4 @@ a {
         border-width: 1px;
         border-color: white;
     }
-}
-.hidden {
-    display: none;
 }
