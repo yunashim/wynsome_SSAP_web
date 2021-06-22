@@ -401,6 +401,7 @@ img {
         .infoText {
             width: fit-content;
             height: fit-content;
+            font-size: 20px;
         }
 
         .personalPhoto:hover > .slidingpage{
