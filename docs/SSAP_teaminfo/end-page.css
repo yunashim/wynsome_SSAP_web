@@ -416,7 +416,24 @@ img {
 
         .photo1 {
             background-image: url(../images/jerry_photo.jpg);
-            background-size: 100%;
+            background-size: 105%;
+            background-position-y: center;
+        }
+
+        .photo2 {
+            background-image: url(../images/dobby_photo.JPG);
+            background-size: 110%;
+        }
+
+        .photo3 {
+            background-image: url(../images/roommate_photo.jpg);
+            background-size: 110%;
+        }
+
+        .photo4 {
+            background-image: url(../images/della_photo.JPG);
+            background-size: 130%;
+            background-position: center center;
         }
 
 
@@ -505,6 +522,10 @@ img {
 
     .page2Box {
         row-gap: 40px;
+    }
+
+    .page1 {
+        height: 40.6rem;
     }
 
     .page2 {
