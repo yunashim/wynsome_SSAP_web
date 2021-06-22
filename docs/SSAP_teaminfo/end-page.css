@@ -447,8 +447,8 @@ body {
 
 @media (max-width: 839px) {
     .container {
-        scroll-snap-type: none;
-        scroll-behavior: none;
+        /* scroll-snap-type: none;
+        scroll-behavior: none; */
     }
 
     .page2Box {
@@ -467,7 +467,7 @@ body {
 
 @media (max-width: 500px) {
     .container {
-        scroll-snap-type: none;
+        /* scroll-snap-type: none; */
     }
 
     .personalPhoto {
@@ -493,7 +493,7 @@ body {
 
 @media (max-width: 425px) {
     .container {
-        scroll-snap-type: none;
+        /* scroll-snap-type: none; */
         width: 100%;
         height: fit-content;
         justify-content: center;
