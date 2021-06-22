@@ -12,7 +12,7 @@
     font-family: 'Gothic A1', sans-serif;
 }
 .teamlogo {
-    width: 240px;
+    width: 273px;
     height: 73px;
     color: white;
     font-size: 20px;
@@ -46,7 +46,7 @@ a {
     border-color: #326148;
     z-index: 99;
 }
-.firstmenutext:hover > .firstmenuline {
+.firstmenuline {
     border-style: solid;
     border-width: 1px;
     border-color: white;
@@ -58,7 +58,7 @@ a {
     border-color: white;
     z-index: 99;
 }
-.thirdmenuline {
+.thirdmenutext:hover > .thirdmenuline {
     border-style: solid;
     border-width: 1px;
     border-color: white;
@@ -135,6 +135,7 @@ a {
 }
 .newmenu {
     display: none;
+    z-index: 1;
 }
 .newfirstmenuline, .newsecondmenuline, .newthirdmenuline {
     border-style: solid;
@@ -161,13 +162,13 @@ a {
     z-index: 99;
 }
 .smallbackground {
-    z-index: -2;
+    z-index: -10;
     position: absolute;
     left: 236px;
     background-color: #EBE8E3;
     width: 100%;
     max-width: 960px;
-    height: 1570px;
+    height: 1580px;
 }
 .text {
     z-index: -1;
@@ -176,14 +177,14 @@ a {
     font-family: 'Gothic A1', sans-serif;
 }
 .bigtext {
-    font-size: 25pt;
+    font-size: 23pt;
     font-weight: bold;
     color: black;
     margin-top: 60px;
     margin-bottom: 10px;
 }
 .smalltext {
-    font-size: 14pt;
+    font-size: 12pt;
     color: gray;
 }
 .motionbox {
@@ -191,31 +192,32 @@ a {
     position: absolute;
     left: 0px;
     top: 521px;
+}
+.motionbox img {
     width: 1000px;
     height: 300px;
-    background-color: black;
-    opacity: 50%;
 }
 .SSAP {
     z-index: 0;
     position: absolute;
-    top: 600px;
-    left: 1000px;
-    width: 440px;
-    height: 250px;
-    background-color: #326148;
-    opacity: 50%;
+    top: 620px;
+    left: 840px;
+}
+.SSAP img {
+    width: 600px;
+    height: 220px;
 }
 .motionbox1 {
-    z-index: 0;
+    z-index: -5;
     position: absolute;
-    top: 1070px;
-    width: 500px;
-    height: 500px;
-    background-color: black;
-    opacity: 50%;
+    top: 1220px;
+}
+.motionbox1 img {
+    width: 350px;
+    height: 350px;
 }
 .firstcircle {
+    z-index: 5;
     position: absolute;
     left: 360px;
     top: 1100px;
@@ -225,12 +227,11 @@ a {
     border-color: black;
     border-width: 4px;
     border-radius: 50%;
-    background-color: gray;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    background-image: url(../images/img_dobby_secondpage_incricle_1.png);
+    background-position: center;
 }
 .secondcircle {
+    z-index: 5;
     position: absolute;
     left: 600px;
     top: 1100px;
@@ -245,21 +246,29 @@ a {
     align-items: center;
     justify-content: center;
     margin-left: 77px;
+    background-image: url(../images/img_dobby_secondpage_incircle_@.png);
 }
 .firsttext {
     position: absolute;
     top: 1230px;
     left: 110px;
-    z-index: 1;
+    z-index: 5;
     font-family: 'Gothic A1', sans-serif;
     display: none;
 }
 .secondtext {
+    z-index: 5;
     position: absolute;
     top: 1230px;
     left: 640px;
     font-family: 'Gothic A1', sans-serif;
     display: none;
+}
+.go {
+    transform: translate(0px, -150px);
+}
+.see {
+    display: block;
 }
 
 
@@ -437,82 +446,116 @@ img {
         }
 
 
-@media(max-width: 960px) {
-    .headermenu {
-        display: none;
-    }
-    .clickmenu {
-        display: block;
-        color: white;
-        font-size: 25px;
-        margin-right: 20px;
-        margin-left: auto;
-    }
-    .newmenu {
-        position: fixed;
-        top: 73px;
-        background-color: #326148;
-        color: white;
-        font-family: 'Gothic A1', sans-serif;
-        width: 100%;
-        height: 200px;
-        display: none;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-    }
-    .smallbackground {
-        z-index: -2;
-        position: absolute;
-        left: 0px;
-        background-color: #EBE8E3;
-        width: 100%;
-        height: 2750px;
-    }
-    .text {
-        margin-top: 200px;
-        margin-left: 5px;
-        text-align: center;
-    }
-    .motionbox {
-        width: 100%;
-        top: 670px;
-    }
-    .SSAP {
-        top: 970px;
-        left: 162px;
-    }
-    .motionbox1 {
-        width: 100%;
-        top: 2450px;
-    }
-    .firstcircle {
-        top: 1400px;
-        left: 50px;
-    }
-    .firsttext {
-        top: 1530px;
-    }
-    .secondcircle {
-        position: absolute;
-        top: 1950px;
-        left: -30px;
-    }
-    .secondtext {
-        position: absolute;
-        top: 2080px;
-        left: 116px;
-    }
-}
-.hidden {
-    display: flex;
-}
-.go {
-    transform: translate(0px, -150px);
-}
-.see {
-    display: block;
-}
+        @media(max-width: 960px) {
+            .header, .teamlogo {
+                height: 40px;
+            }
+            .headermenu {
+                display: none;
+            }
+            .clickmenu {
+                display: block;
+                color: white;
+                font-size: 22px;
+                margin-right: 20px;
+                margin-left: auto;
+            }
+            .newmenu {
+                position: fixed;
+                top: 40px;
+                background-color: #326148;
+                opacity: 80%;
+                color: white;
+                font-family: 'Gothic A1', sans-serif;
+                width: 100%;
+                height: 300px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+                display: none;
+                z-index: 9;
+            }
+            .newfirstmenu, .newsecondmenu, .newthirdmenu {
+                height: 60px;
+                margin-top: 39px;
+            }
+            .newservemenu {
+                text-align: center;
+                display: none;
+            }
+            .newsecondmenu:hover > .newservemenu {
+                display: block;
+            }
+            .newservemenu a{
+                font-size: 15px;
+            }
+            .newfirstservemenu {
+                margin-top: 10px;
+            }
+            .newfirstservemenu, .newsecondservemenu {
+                height: 33px;
+            }
+            .newfirstserveline, .newsecondserveline {
+                border-style: solid;
+                border-width: 1px;
+                border-color: #326148;
+                opacity: 50%;
+            }
+            .newservemenu a:hover > .newfirstserveline {
+                border-style: solid;
+                border-width: 1px;
+                border-color: white;
+            }
+            .newservemenu a:hover > .newsecondserveline {
+                border-style: solid;
+                border-width: 1px;
+                border-color: white;
+            }
+            .smallbackground {
+                z-index: -2;
+                position: absolute;
+                left: 0px;
+                background-color: #EBE8E3;
+                width: 100%;
+                height: 2300px;
+            }
+            .text {
+                margin-top: 400px;
+                margin-left: 5px;
+                text-align: center;
+            }
+            .motionbox {
+                width: 100%;
+                top: 670px;
+            }
+            .motionbox img {
+                width: 100%;
+            }
+            .SSAP, .motionbox1 {
+                display: none;
+            }
+            .firstcircle {
+                top: 1400px;
+                left: 50px;
+            }
+            .firsttext {
+                top: 1530px;
+            }
+            .secondcircle {
+                position: absolute;
+                top: 1950px;
+                left: -30px;
+            }
+            .secondtext {
+                position: absolute;
+                top: 2080px;
+                left: 116px;
+            }
+            .show {
+                display: flex;
+            }
+        }
 
 @media (max-width: 839px) {
     .container {

@@ -288,9 +288,9 @@ a {
     }
     .newmenu {
         position: fixed;
-        top: 50px;
+        top: 40px;
         background-color: #326148;
-        opacity: 50%;
+        opacity: 80%;
         color: white;
         font-family: 'Gothic A1', sans-serif;
         width: 100%;
@@ -300,6 +300,7 @@ a {
         justify-content: space-around;
         align-items: center;
         display: none;
+        z-index: 9;
     }
     .newfirstmenu, .newsecondmenu, .newthirdmenu {
         height: 60px;
