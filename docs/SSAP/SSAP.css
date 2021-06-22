@@ -163,13 +163,13 @@ a {
     z-index: 99;
 }
 .smallbackground {
-    z-index: -2;
+    z-index: -10;
     position: absolute;
     left: 236px;
     background-color: #EBE8E3;
     width: 100%;
     max-width: 960px;
-    height: 1570px;
+    height: 1580px;
 }
 .text {
     z-index: -1;
@@ -209,15 +209,16 @@ a {
     height: 220px;
 }
 .motionbox1 {
-    z-index: 0;
+    z-index: -5;
     position: absolute;
-    top: 820px;
+    top: 1220px;
 }
 .motionbox1 img {
-    width: 1400px;
-    height: 730px;
+    width: 350px;
+    height: 350px;
 }
 .firstcircle {
+    z-index: 5;
     position: absolute;
     left: 360px;
     top: 1100px;
@@ -231,6 +232,7 @@ a {
     background-position: center;
 }
 .secondcircle {
+    z-index: 5;
     position: absolute;
     left: 600px;
     top: 1100px;
@@ -251,11 +253,12 @@ a {
     position: absolute;
     top: 1230px;
     left: 110px;
-    z-index: 1;
+    z-index: 5;
     font-family: 'Gothic A1', sans-serif;
     display: none;
 }
 .secondtext {
+    z-index: 5;
     position: absolute;
     top: 1230px;
     left: 640px;
@@ -299,7 +302,7 @@ a {
         left: 0px;
         background-color: #EBE8E3;
         width: 100%;
-        height: 2950px;
+        height: 2300px;
     }
     .text {
         margin-top: 380px;
@@ -310,13 +313,11 @@ a {
         width: 100%;
         top: 670px;
     }
-    .SSAP {
-        top: 970px;
-        left: 162px;
+    .motionbox img {
+        width: 640px;
     }
-    .motionbox1 {
-        width: 100%;
-        top: 2450px;
+    .SSAP, .motionbox1 {
+        display: none;
     }
     .firstcircle {
         top: 1400px;
