@@ -37,6 +37,10 @@ a {
     font-size: 18px;
     cursor: pointer;
 }
+.perlink {
+    color: black;
+    font-size: 15px;
+}
 .firstmenu, .secondmenu, .thirdmenu {
     display: flex;
     flex-direction: column;
