@@ -421,6 +421,10 @@ body {
     height: 100%;
     display: flex;
     flex-flow: column nowrap;
+    background-image: url(../images/img_jerry_washer-removebg-preview.png);
+    background-size: 20rem;
+    background-repeat: no-repeat;
+    background-position: top 100px left 20px;
 }
 
 .sideText2 {
@@ -481,6 +485,7 @@ body {
     /* height: 170px; */
     height: 10.625rem;
     margin-bottom: 0;
+    border-radius: 10px;
 }
 
 .timeBox:hover~.timeText {
@@ -602,6 +607,12 @@ body {
     }
     .timeLineBox {
         height: 390px;
+    }
+}
+
+@media (max-width: 875px) {
+    #waterSideTextBox2 {
+        background-image: none;
     }
 }
 
