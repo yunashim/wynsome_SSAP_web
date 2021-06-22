@@ -629,9 +629,31 @@ body {
     }
 }
 
-@media (max-width: 479px) {
-    .midGreen {
-        height: 950px;
+@media (max-width: 542px) {
+    .subText2 {
+        font-size: 0.925rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .header {
+        height: 40px;
+    }
+
+    .newmenu {
+        margin-top: -33px;
+    }
+
+    .teamlogo {
+        height: 40px;
+    }
+
+    .realSpaceTaken {
+        height: calc(100vh - 40px);
+    }
+
+    .mid {
+        margin-top: -40px;
     }
     .spacePage1 {
         justify-content: center;
@@ -645,6 +667,20 @@ body {
     }
     .page1 {
         height: 400px;
+    }
+
+    #animationWater {
+        display: none;
+    }
+
+    .greenTitle, .subText2 {
+        text-align: left;
+    }
+}
+
+@media (max-width: 479px) {
+    .midGreen {
+        height: 950px;
     }
     .page2 {
         height: 700px;
@@ -668,9 +704,6 @@ body {
         height: fit-content;
         padding-top: 0;
         margin-left: 1rem;
-    }
-    .subText2 {
-        font-size: 0.925rem;
     }
 }
 
