@@ -462,6 +462,7 @@ body {
 
     .safeZone {
         scroll-snap-align: none;
+        height: max-content;
     }
 }
 
