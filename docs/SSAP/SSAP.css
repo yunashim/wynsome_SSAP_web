@@ -136,6 +136,7 @@ a {
 }
 .newmenu {
     display: none;
+    z-index: 1;
 }
 .newfirstmenuline, .newsecondmenuline, .newthirdmenuline {
     border-style: solid;
