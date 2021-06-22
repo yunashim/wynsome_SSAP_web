@@ -630,7 +630,7 @@ body {
         height: 400px;
     }
     .page2 {
-        height: 600px;
+        height: 500px;
     }
     #timeline {
         row-gap: 40px;
@@ -651,6 +651,9 @@ body {
         height: fit-content;
         padding-top: 0;
         margin-left: 1rem;
+    }
+    .subText2 {
+        font-size: 0.925rem;
     }
 }
 
