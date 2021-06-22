@@ -262,6 +262,13 @@ a {
     font-family: 'Gothic A1', sans-serif;
     display: none;
 }
+.go {
+    transform: translate(0px, -150px);
+}
+.see {
+    display: block;
+}
+
 @media(max-width: 960px) {
     .headermenu {
         display: none;
@@ -328,13 +335,7 @@ a {
         top: 2080px;
         left: 116px;
     }
-}
-.hidden {
-    display: none;
-}
-.go {
-    transform: translate(0px, -150px);
-}
-.see {
-    display: block;
+    .show {
+        display: flex;
+    }
 }
