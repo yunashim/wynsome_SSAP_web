@@ -36,6 +36,7 @@ a {
     list-style-type: none;
     color: white;
     font-size: 18px;
+    cursor: pointer;
 }
 .firstmenu, .secondmenu, .thirdmenu {
     display: flex;
@@ -275,6 +276,9 @@ a {
 @media(max-width: 960px) {
     .header, .teamlogo {
         height: 40px;
+    }
+    .teamlogo {
+        width: 220px;
     }
     .headermenu {
         display: none;

@@ -35,6 +35,7 @@ a {
     list-style-type: none;
     color: white;
     font-size: 18px;
+    cursor: pointer;
 }
 .firstmenu, .secondmenu, .thirdmenu {
     display: flex;
@@ -446,116 +447,128 @@ img {
         }
 
 
-        @media(max-width: 960px) {
-            .header, .teamlogo {
-                height: 40px;
-            }
-            .headermenu {
-                display: none;
-            }
-            .clickmenu {
-                display: block;
-                color: white;
-                font-size: 22px;
-                margin-right: 20px;
-                margin-left: auto;
-            }
-            .newmenu {
-                position: fixed;
-                top: 40px;
-                background-color: #326148;
-                opacity: 80%;
-                color: white;
-                font-family: 'Gothic A1', sans-serif;
-                width: 100%;
-                height: 300px;
-                display: flex;
-                flex-direction: column;
-                justify-content: space-around;
-                align-items: center;
-                display: none;
-                z-index: 9;
-            }
-            .newfirstmenu, .newsecondmenu, .newthirdmenu {
-                height: 60px;
-                margin-top: 39px;
-            }
-            .newservemenu {
-                text-align: center;
-                display: none;
-            }
-            .newsecondmenu:hover > .newservemenu {
-                display: block;
-            }
-            .newservemenu a{
-                font-size: 15px;
-            }
-            .newfirstservemenu {
-                margin-top: 10px;
-            }
-            .newfirstservemenu, .newsecondservemenu {
-                height: 33px;
-            }
-            .newfirstserveline, .newsecondserveline {
-                border-style: solid;
-                border-width: 1px;
-                border-color: #326148;
-                opacity: 50%;
-            }
-            .newservemenu a:hover > .newfirstserveline {
-                border-style: solid;
-                border-width: 1px;
-                border-color: white;
-            }
-            .newservemenu a:hover > .newsecondserveline {
-                border-style: solid;
-                border-width: 1px;
-                border-color: white;
-            }
-            .smallbackground {
-                z-index: -2;
-                position: absolute;
-                left: 0px;
-                background-color: #EBE8E3;
-                width: 100%;
-                height: 2300px;
-            }
-            .text {
-                margin-top: 400px;
-                margin-left: 5px;
-                text-align: center;
-            }
-            .motionbox {
-                width: 100%;
-                top: 670px;
-            }
-            .motionbox img {
-                width: 100%;
-            }
-            .SSAP, .motionbox1 {
-                display: none;
-            }
-            .firstcircle {
-                top: 1400px;
-                left: 50px;
-            }
-            .firsttext {
-                top: 1530px;
-            }
-            .secondcircle {
-                position: absolute;
-                top: 1950px;
-                left: -30px;
-            }
-            .secondtext {
-                position: absolute;
-                top: 2080px;
-                left: 116px;
-            }
-            .show {
-                display: flex;
-            }
-        }
+@media(max-width: 960px) {
+    .header, .teamlogo {
+        height: 40px;
+    }
+    .teamlogo {
+        width: 220px;
+    }
+    .headermenu {
+        display: none;
+    }
+    .clickmenu {
+        display: block;
+        color: white;
+        font-size: 22px;
+        margin-right: 20px;
+        margin-left: auto;
+    }
+    .newmenu {
+        position: fixed;
+        top: 40px;
+        background-color: #326148;
+        opacity: 80%;
+        color: white;
+        font-family: 'Gothic A1', sans-serif;
+        width: 100%;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        display: none;
+        z-index: 9;
+    }
+    .newfirstmenu, .newsecondmenu, .newthirdmenu {
+        height: 60px;
+        margin-top: 39px;
+    }
+    .newservemenu {
+        text-align: center;
+        display: none;
+    }
+    .newsecondmenu:hover > .newservemenu {
+        display: block;
+    }
+    .newservemenu a{
+        font-size: 15px;
+    }
+    .newfirstservemenu {
+        margin-top: 10px;
+    }
+    .newfirstservemenu, .newsecondservemenu {
+        height: 33px;
+    }
+    .newfirstserveline, .newsecondserveline {
+        border-style: solid;
+        border-width: 1px;
+        border-color: #326148;
+        opacity: 50%;
+    }
+    .newservemenu a:hover > .newfirstserveline {
+        border-style: solid;
+        border-width: 1px;
+        border-color: white;
+    }
+    .newservemenu a:hover > .newsecondserveline {
+        border-style: solid;
+        border-width: 1px;
+        border-color: white;
+    }
+    .smallbackground {
+        z-index: -2;
+        position: absolute;
+        left: 0px;
+        background-color: #EBE8E3;
+        width: 100%;
+        height: 2300px;
+    }
+    .text {
+        margin-top: 400px;
+        margin-left: 5px;
+        text-align: center;
+    }
+    .motionbox {
+        width: 100%;
+        top: 670px;
+    }
+    .motionbox img {
+        width: 100%;
+    }
+    .SSAP, .motionbox1 {
+        display: none;
+    }
+    .firstcircle {
+        top: 1400px;
+        left: 50px;
+    }
+    .firsttext {
+        top: 1530px;
+    }
+    .secondcircle {
+        position: absolute;
+        top: 1950px;
+        left: -30px;
+    }
+    .secondtext {
+        position: absolute;
+        top: 2080px;
+        left: 116px;
+    }
+    .show {
+        display: flex;
+    }
+    .mid {
+        margin-top: -40px;
+    }
+    .realSpaceTaken {
+        height: calc(100vh - 40px);
+    }
+    .page1 {
+        height: 45rem;
+    }
+}
 
 @media (max-width: 839px) {
     .container {
@@ -565,10 +578,6 @@ img {
 
     .page2Box {
         row-gap: 40px;
-    }
-
-    .page1 {
-        height: 40.6rem;
     }
 
     .page2 {
@@ -593,14 +602,6 @@ img {
 
     .teamlogo {
         height: 40px;
-    }
-
-    .realSpaceTaken {
-        height: calc(100vh - 40px);
-    }
-
-    .mid {
-        margin-top: -40px;
     }
 
     .personalPhoto {
