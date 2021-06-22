@@ -700,7 +700,7 @@ video {
     }
 
     .realSpaceTaken {
-        height: calc(100vh - 40px);
+        height: calc(fit-content - 40px);
     }
 
     .mid {
