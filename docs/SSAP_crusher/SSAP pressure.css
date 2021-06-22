@@ -256,7 +256,7 @@ a {
                         margin: 0;
                         padding: 0;
                         animation-name: rolling;
-                        animation-duration: 3s;
+                        animation-duration: 4s;
                         animation-iteration-count: infinite;
                         animation-direction: reverse;
                     }
@@ -272,9 +272,8 @@ a {
             }
 
         #info_Box {
-            width: 65%;
+            width: 600px;
             height: 526px;
-            margin: auto;
         }
         .info_Box_hidden {
             display: none;
@@ -285,7 +284,7 @@ a {
                 border: #81A78C solid 4px;
                 margin: 10px 0;
                 width: 100%;
-                min-width: 600px;
+                max-width: 600px;
                 height: 147px;
             }
             .info_hidden {
@@ -424,6 +423,7 @@ a {
     #img_Box {
         height: 500px;
         width: 750px;
+        background-size: 100%;
     }
 
         #Text_Box {
@@ -471,6 +471,10 @@ a {
         font-size: 12px;
         margin-top: 35%;
     }
+}
+
+@media (max-width: 630px) {
+    
 }
 
 /* Animation */

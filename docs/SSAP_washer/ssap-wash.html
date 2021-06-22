@@ -7,6 +7,7 @@
     <title>SSAP Washer</title>
     <link rel="stylesheet" href="./ssap-wash.css">
     <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
 </head>
 
 <body>
@@ -22,6 +23,10 @@
                 </div>
             </div>
             <div class="secondmenu">
+                <div class="secondmenutext">
+                    <a href="">SSAP 결과물</a>
+                    <div class="secondmenuline"></div>
+                </div>
                 <div class="servemenu">
                     <div class="blankdiv"></div>
                     <div class="servemenu-content">
@@ -29,13 +34,9 @@
                             <a href="../SSAP_crusher/SSAP pressure.html">SSAP 압축</a>
                         </div>
                         <div class="secondservemenu">
-                            <a href="./ssap-wash.html">SSAP 세척</a>
+                            <a href="../SSAP_washer/ssap-wash.html">SSAP 세척</a>
                         </div>
                     </div>
-                </div>
-                <div class="secondmenutext">
-                    <a href="">SSAP 결과물</a>
-                    <div class="secondmenuline"></div>
                 </div>
             </div>
             <div class="thirdmenu">
@@ -43,7 +44,32 @@
                     <a href="../SSAP_teaminfo/end-page.html">팀소개</a>
                     <div class="thirdmenuline"></div>
                 </div>
-            </div>       
+            </div>
+        </div>
+        
+        <div class="clickmenu" id="toggle-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+    </div>
+
+    <div class="newmenu">
+        <div class="newfirstmenu">
+            <div class="newfirstmenutext">
+                <a href="../SSAP/SSAP.html">SSAP</a>
+                <div class="newfirstmenuline"></div>
+            </div>
+        </div>
+        <div class="newsecondmenu">
+            <div class="newsecondmenutext">
+                <a href="">SSAP 결과물</a>
+                <div class="newsecondmenuline"></div>
+            </div>
+        </div>
+        <div class="newthirdmenu">
+            <div class="newthirdmenutext">
+                <a href="../SSAP_teaminfo/end-page.html">팀소개</a>
+                <div class="newthirdmenuline"></div>
+            </div>
         </div>
     </div>
 
@@ -58,7 +84,16 @@
                     <div id="waterSideTextBox1">
                         <div id="waterSideText1">
                             <div id="waterSSAP">SSAP</div>
-                            <div id="waterRolling"></div>
+                            <div id="waterRolling">
+                                <div id="Changing_Text">
+                                    <ul>
+                                        <li>캔</li>
+                                        <li>페트병</li>
+                                        <li>플라스틱 종이</li>
+                                        <li>캔</li>
+                                    </ul>
+                                </div>
+                            </div>
                             <div id="washerText">세척기</div>
                         </div>
                     </div>
@@ -121,7 +156,7 @@
     </div>
 
 
-    <script>
+    <script src="../SSAP_teaminfo/end-page.js">
         // var timeBoxs = document.getElementsByClassName("timeBox")
         // var timeTexts = document.getElementsByClassName("timeText")
         // for (var i in timeBoxs) {
