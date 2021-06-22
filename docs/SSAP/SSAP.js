@@ -9,5 +9,5 @@ document.getElementById('secondcircle').addEventListener('click', function () {
 })
 
 document.getElementById('toggle-menu').addEventListener('click', function () {
-    document.querySelector('.newmenu').classList.toggle('show');
+    document.querySelector('.newmenu').classList.toggle("show");
 })

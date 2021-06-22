@@ -178,14 +178,14 @@ a {
     font-family: 'Gothic A1', sans-serif;
 }
 .bigtext {
-    font-size: 25pt;
+    font-size: 23pt;
     font-weight: bold;
     color: black;
     margin-top: 60px;
     margin-bottom: 10px;
 }
 .smalltext {
-    font-size: 14pt;
+    font-size: 12pt;
     color: gray;
 }
 .motionbox {
@@ -273,29 +273,69 @@ a {
 }
 
 @media(max-width: 960px) {
+    .header, .teamlogo {
+        height: 40px;
+    }
     .headermenu {
         display: none;
     }
     .clickmenu {
         display: block;
         color: white;
-        font-size: 25px;
+        font-size: 22px;
         margin-right: 20px;
         margin-left: auto;
     }
     .newmenu {
         position: fixed;
-        top: 73px;
+        top: 50px;
         background-color: #326148;
         opacity: 50%;
         color: white;
         font-family: 'Gothic A1', sans-serif;
         width: 100%;
-        height: 200px;
-        display: none;
+        height: 300px;
+        display: flex;
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
+        display: none;
+    }
+    .newfirstmenu, .newsecondmenu, .newthirdmenu {
+        height: 60px;
+        margin-top: 39px;
+    }
+    .newservemenu {
+        text-align: center;
+        display: none;
+    }
+    .newsecondmenu:hover > .newservemenu {
+        display: block;
+    }
+    .newservemenu a{
+        font-size: 15px;
+    }
+    .newfirstservemenu {
+        margin-top: 10px;
+    }
+    .newfirstservemenu, .newsecondservemenu {
+        height: 33px;
+    }
+    .newfirstserveline, .newsecondserveline {
+        border-style: solid;
+        border-width: 1px;
+        border-color: #326148;
+        opacity: 50%;
+    }
+    .newservemenu a:hover > .newfirstserveline {
+        border-style: solid;
+        border-width: 1px;
+        border-color: white;
+    }
+    .newservemenu a:hover > .newsecondserveline {
+        border-style: solid;
+        border-width: 1px;
+        border-color: white;
     }
     .smallbackground {
         z-index: -2;
@@ -306,7 +346,7 @@ a {
         height: 2300px;
     }
     .text {
-        margin-top: 380px;
+        margin-top: 400px;
         margin-left: 5px;
         text-align: center;
     }
@@ -315,7 +355,7 @@ a {
         top: 670px;
     }
     .motionbox img {
-        width: 640px;
+        width: 100%;
     }
     .SSAP, .motionbox1 {
         display: none;
