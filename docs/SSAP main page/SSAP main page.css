@@ -24,19 +24,56 @@ body {
     right: 0
 }
 
-.img {
-    position:fixed;
-    width: 600px;
-    height: 500px;
-    margin: 0 auto;
-  
+#slider{
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    overflow: hidden;
+}
+#slider figure{
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    animation: 10s slider infinite;
+}
+#slider figure img{
+    width: 20%;
+    float: left;
+}
+#photo1 {
+    height: 560px;
+}
+
+#photo2 {
+    height: 560px;
+}
+
+#photo3 {
+    height: 560px;
+}
+
+@keyframes slider {
+    0% {
+        left: 0;
+    }
+    33% {
+        left: -100%;
+    }
+    66% {
+        left: -200%;
+    }
+    100% {
+        left: -300%;
+    }
+
 }
 
 .textbox1 {
     position: absolute;
     justify-content: space-evenly;
     left: 30px;
-    bottom: 50px;
+    bottom: 15px;
     width: 250px;
     height: 150px;
     padding-left: 5%;
