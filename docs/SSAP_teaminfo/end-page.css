@@ -328,7 +328,7 @@ body {
     max-width: 60rem;
     height: fit-content;
     min-height: 200px;
-    max-height: 400px;
+    max-height: 450px;
     /* margin-top: 40px; */
     margin-top: 2.5rem;
     background-color: black;
@@ -383,6 +383,11 @@ img {
             width: 26.25rem;
             /* height: 250px; */
             height: 15rem;
+        }
+
+        .photo1 {
+            background-image: url(../images/jerry_photo.jpg);
+            background-size: 100%;
         }
 
 
