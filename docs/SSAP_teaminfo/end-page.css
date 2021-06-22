@@ -12,7 +12,7 @@
     font-family: 'Gothic A1', sans-serif;
 }
 .teamlogo {
-    width: 273px;
+    width: 240px;
     height: 73px;
     color: white;
     font-size: 20px;
@@ -519,8 +519,24 @@ img {
 }
 
 @media (max-width: 500px) {
-    .container {
-        scroll-snap-type: none;
+    .header {
+        height: 40px;
+    }
+
+    .newmenu {
+        margin-top: -40px;
+    }
+
+    .teamlogo {
+        height: 40px;
+    }
+
+    .realSpaceTaken {
+        height: calc(100vh - 40px);
+    }
+
+    .mid {
+        margin-top: -40px;
     }
 
     .personalPhoto {
