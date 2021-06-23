@@ -506,6 +506,10 @@ iframe {
     margin-bottom: 0;
     border-radius: 10px;
 }
+.timeBox img {
+    width: 9.375rem;
+    height: 10.625rem;
+}
 
 .timeBox:hover~.timeText {
     display: inline-block;
