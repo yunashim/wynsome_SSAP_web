@@ -280,12 +280,14 @@ img {
         width: 100%;
         max-width: 960px;
         height: 55%;
-        margin: 0 20;
+        display: flex;
     }
 
-        video {
-            z-index: 99;
-            margin-top: 100px;
+        iframe {
+            margin: auto;
+            justify-content: center;
+            position: relative;
+            left: -11%;
         }
 
     #container1 {
@@ -616,6 +618,10 @@ img {
         }
 }
 
+@media (max-width: 600px) {
+
+}
+
 @media (max-width: 370px) {
     .info {
         border: none;
@@ -636,6 +642,12 @@ img {
 @media (max-width: 1439px) {
     img {
         display: none;
+    }
+    #container1 {
+        position: static;
+    }
+    iframe {
+        position: static;
     }
 }
 
