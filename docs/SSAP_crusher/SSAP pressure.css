@@ -258,6 +258,7 @@ a {
     justify-content: center;
     align-items: center;
     scroll-snap-align: start;
+    font-family: 'Gothic A1', sans-serif;
 }
 
 img {
@@ -265,6 +266,7 @@ img {
     padding: 0;
 }
     img:nth-child(1) {
+        margin-top: 145px;
         position: relative;
         left: -20%;
     }
@@ -353,6 +355,7 @@ img {
                 font-style: italic;
                 color: #326148;
                 text-shadow: 2px 2px 1px black;
+                font-family: 'Playfair Display', serif;
             }
 
             #Changing_Text_Box {
@@ -470,7 +473,7 @@ img {
     }
 
         #Text_Box {
-            width: 450px;
+            width: 480px;
             height: 200px;
             margin-right: 45px;
             margin-left: auto;
