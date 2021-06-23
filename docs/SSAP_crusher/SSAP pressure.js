@@ -1,3 +1,7 @@
+document.getElementById('toggle-menu').addEventListener('click', function () {
+    document.querySelector('.newmenu').classList.toggle('show');
+})
+
 var texts = [
     {
         Btxt: "손잡이",
