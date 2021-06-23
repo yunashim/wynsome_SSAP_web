@@ -50,13 +50,13 @@ a {
     border-color: #326148;
     z-index: 99;
 }
-.firstmenuline {
+.firstmenutext > .firstmenuline {
     border-style: solid;
     border-width: 1px;
     border-color: white;
     z-index: 99;
 }
-.secondmenutext:hover > .secondmenuline {
+.secondmenuline {
     border-style: solid;
     border-width: 1px;
     border-color: white;
