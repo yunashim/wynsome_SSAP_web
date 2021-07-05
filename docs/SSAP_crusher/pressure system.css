@@ -176,6 +176,7 @@ a {
         font-size: 22px;
         margin-right: 20px;
         margin-left: auto;
+        cursor: pointer;
     }
     .newmenu {
         position: fixed;
@@ -272,8 +273,8 @@ a {
                 background-color: white;
                 width: 100%;
                 height: 50%;
+                max-height: 193px;
                 border-radius: 50%;
-                border: solid black 1px;
                 text-align: center;
                 display: flex;
                 flex-direction: column;
@@ -285,6 +286,30 @@ a {
 
                 .Circle:hover ~ .TextBox {
                     color: white;
+                }
+
+                .Left_Box:nth-child(1) > .Circle {
+                    background-image: url(../images/KakaoTalk_Image_2021-04-09-09-22-02_001.jpeg);
+                    background-size: 100%;
+                    background-position: center center;
+                }
+
+                .Right_Box:nth-child(2) > .Circle {
+                    background-image: url(../images/KakaoTalk_Image_2021-04-13-13-38-01_001.jpeg);
+                    background-size: 100%;
+                    background-position: center 40%;
+                }
+
+                .Left_Box:nth-child(3) > .Circle {
+                    background-image: url(../images/KakaoTalk_Image_2021-04-16-13-47-50.jpeg);
+                    background-size: 100%;
+                    background-position: center 30%;
+                }
+
+                .Right_Box:nth-child(4) > .Circle {
+                    background-image: url(../images/img_romme_squasher.png);
+                    background-size: 100%;
+                    background-position: center 75%;
                 }
 
             .TextBox {
@@ -333,13 +358,18 @@ a {
             .Circle {
                 width: 24%;
                 max-width: 160px;
-                margin: 0;
-                margin: 0.5% 0;
-                margin-right: 15px;
+                margin: 0 15px 0 0;
+                max-height: 148.67px;
             }
 
             .TextBox {
                 width: 50%;
+                margin: auto 0;
+            }
+
+            .Right_Box > .TextBox {
+                width: 50%;
+                margin: 0 0;
             }
 
                 .Circle:hover ~ .TextBox {
@@ -357,7 +387,7 @@ a {
     }
 
     #container1 {
-        height: 200vh;
+        height: 180vh;
     }
 
         .Left_Box, .Right_Box {
@@ -367,7 +397,7 @@ a {
 
             .Circle {
                 height: 80%;
-                max-height: 162px;
+                min-height: 164px;
                 width: 100%;
                 margin: 0;
                 margin-bottom: 15px;
@@ -379,10 +409,11 @@ a {
                 }
             
             .TextBox {
-                margin: 0;
+                margin: auto 0;
+                font-size: 13px;
             }
 
             .Right_Box > .TextBox {
-                margin: 0;
+                margin: auto 0;
             }
 }
