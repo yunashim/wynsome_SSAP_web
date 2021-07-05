@@ -50,7 +50,7 @@ a {
     border-color: #326148;
     z-index: 99;
 }
-.firstmenutext > .firstmenuline {
+.firstmenutext:hover > .firstmenuline {
     border-style: solid;
     border-width: 1px;
     border-color: white;
