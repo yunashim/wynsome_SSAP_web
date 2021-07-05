@@ -45,6 +45,7 @@ a {
 .firstmenu, .secondmenu, .thirdmenu {
     display: flex;
     flex-direction: column;
+    cursor: pointer;
 }
 .firstmenuline, .thirdmenuline {
     border-style: solid;

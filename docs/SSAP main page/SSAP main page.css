@@ -165,6 +165,7 @@ a {
 .firstmenu, .secondmenu, .thirdmenu {
     display: flex;
     flex-direction: column;
+    cursor: pointer;
 }
 .firstmenuline, .secondmenuline, .thirdmenuline {
     border-style: solid;
