@@ -17,6 +17,28 @@ var texts = [
     }
 ]
 
+// var semesters = [
+//     {
+//         title: "개인주제 프로젝트", data: [
+//             { semesterName: "2020 3분기" },
+//             { semesterName: "2020 4분기" }
+//         ]
+//     },
+//     {
+//         title: "개인주제 프로젝트", data: [
+//             { semesterName: "2020 3분기" },
+//             { semesterName: "2020 4분기" }
+//         ]
+//     }
+// ]
+
+// for (var i in semesters) {
+//     var semester = semesters[i]
+//     for (var j in semester.data) {
+//         var singleData = semester.data[j]
+//     }
+// }
+
 for (var i in texts) {
     var text = texts[i];
     document.getElementById("info_Box").innerHTML += `
